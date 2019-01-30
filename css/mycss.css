@@ -1,0 +1,172 @@
+body{
+    background: url("../assets/back.png") fixed right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f8ff;
+}
+.main{
+    /*padding-left: 100px;
+    padding-right: 100px;*/
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.intro{
+    height:100vh;
+    position: relative;
+}
+
+.introblurb{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Fjord One', serif;
+}
+
+.introblurb h1{
+    font-size: 45pt;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.introblurb p{
+    font-size: 17pt;
+    width: 60%;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #000000;
+    white-space: nowrap;
+    font-size: 22px;
+    font-family: 'Fjord One', serif;
+}
+
+.gallery{
+    padding: 20px 20px 20px 20px;
+}
+
+/* Credit to David Walsh for CSS flipping: https://davidwalsh.name/css-flip*/
+
+/* entire container, keeps perspective */
+.panel {
+    perspective: 1000px;
+    margin-bottom: 20px;
+    /*-webkit-box-shadow: inset 0px 0px 10px 5px #f6f892;
+    -moz-box-shadow: inset 0px 0px 10px 5px #f6f892;
+    box-shadow: inset 0px 0px 10px 5px #f6f892;*/
+}
+.panel, .image, .description {
+    width: 100%;
+}
+
+/* flip speed goes here */
+.flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+    padding-top: 100%;
+}
+
+/* hide back of pane during swap */
+.image, .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+.image img {
+    width: 100%;
+}
+
+/* back, initially hidden pane */
+.description {
+    background-color: #f6f892;
+    padding: 5px 1.3vw 5px 1.3vw;
+    height:100%;
+}
+
+.description-title{
+    font-size: 3vw;
+    margin-bottom:0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.description-position, .description-text{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom:.5vw;
+    font-family: 'Fjord One', serif;
+}
+
+@media (max-width: 767px) {
+    .description-position, .description-text{
+        font-size: 2vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom:2vw;
+    }
+}
+
+@media (max-width: 575px) {
+    .introblurb h1{
+        font-size: 30pt;
+    }
+    .introblurb p{
+        font-size: 14pt;
+        width:100%;
+    }
+    .description-title{
+        font-size: 8vw;
+    }
+    .description-position, .description-text{
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom:2vw;
+    }
+}
+
+.col-sm-6{
+    padding: 20px 20px 20px 20px;
+}
+.col-sm-4{
+    padding: 0px 20px 20px 20px;
+}
+
+.additional-link{
+    margin-bottom: 30px;
+}
+
+a{
+    color: black;
+    transition:color 0.2s ease-in-out;
+}
+
+a:hover{
+    text-decoration:none;
+    color: #007bff;
+}
+
+footer{
+    padding: 60px 0px 50px 0px;
+    position: relative;
+}
+
+footer .footerblurb{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+footer .footerblurb p{
+    font-family: 'Fjord One', serif;
+    font-size: 22px;
+}
