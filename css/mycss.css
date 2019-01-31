@@ -5,8 +5,6 @@ body{
     background-color: #f4f8ff;
 }
 .main{
-    /*padding-left: 100px;
-    padding-right: 100px;*/
     position: absolute;
     width: 80%;
     left: 50%;
@@ -52,9 +50,6 @@ body{
 .panel {
     perspective: 1000px;
     margin-bottom: 20px;
-    /*-webkit-box-shadow: inset 0px 0px 10px 5px #f6f892;
-    -moz-box-shadow: inset 0px 0px 10px 5px #f6f892;
-    box-shadow: inset 0px 0px 10px 5px #f6f892;*/
 }
 .panel, .image, .description {
     width: 100%;
@@ -84,6 +79,28 @@ body{
     font-family: 'Fjord One', serif;
 }
 
+.col-sm-6{
+    padding: 20px 20px 20px 20px;
+}
+.col-sm-4{
+    padding: 0px 20px 20px 20px;
+}
+
+.additional-link{
+    margin-bottom: 30px;
+}
+
+a{
+    color: black;
+    transition:color 0.2s ease-in-out;
+}
+
+a:hover{
+    text-decoration:none;
+    color: #007bff;
+}
+
+
 @media (max-width: 767px) {
     .description-position, .description-text{
         font-size: 2vw;
@@ -110,42 +127,7 @@ body{
         padding: 0;
         margin-bottom:2vw;
     }
-}
-
-.col-sm-6{
-    padding: 20px 20px 20px 20px;
-}
-.col-sm-4{
-    padding: 0px 20px 20px 20px;
-}
-
-.additional-link{
-    margin-bottom: 30px;
-}
-
-a{
-    color: black;
-    transition:color 0.2s ease-in-out;
-}
-
-a:hover{
-    text-decoration:none;
-    color: #007bff;
-}
-
-footer{
-    padding: 60px 0px 50px 0px;
-    position: relative;
-}
-
-footer .footerblurb{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
-}
-
-footer .footerblurb p{
-    font-family: 'Fjord One', serif;
-    font-size: 22px;
+    .scroll{
+      bottom: 100px;
+    }
 }
