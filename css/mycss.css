@@ -99,7 +99,11 @@ a:hover{
     text-decoration:none;
     color: #007bff;
 }
-
+.link{
+  width: 75%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
 @media (max-width: 767px) {
     .description-position, .description-text{
