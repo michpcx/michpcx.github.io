@@ -48,7 +48,6 @@ body{
     padding: 20px 20px 20px 20px;
 }
 .panel {
-    perspective: 1000px;
     margin-bottom: 20px;
 }
 .panel, .image, .description {
@@ -64,7 +63,8 @@ body{
 .description {
     background-color: #ccddff;
     padding: 5px 1.3vw 5px 1.3vw;
-    height:100%;
+    height: 100%;
+    display: table;
 }
 .description-title{
     font-size: 2vw;
@@ -100,7 +100,7 @@ a:hover{
     color: #007bff;
 }
 .link{
-  width: 75%;
+  width: 60%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
