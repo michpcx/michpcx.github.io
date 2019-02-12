@@ -104,6 +104,9 @@ a:hover{
   margin-left: 50%;
   transform: translateX(-50%);
 }
+#listItem1, #listItem2, #listItem3, #listItem4{
+  display: none;
+}
 
 @media (max-width: 767px) {
     .description-position, .description-text{
