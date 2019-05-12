@@ -2,7 +2,7 @@ body{
     background: url("../assets/back.png") fixed right top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #fdffc6;
+    background-color: #f4f8ff;
 }
 .main{
     position: absolute;
