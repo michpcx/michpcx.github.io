@@ -10,19 +10,6 @@ body{
     left: 50%;
     transform: translate(-50%);
 }
-.title{
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 300%;
-}
-.arrow{
-  width: 40px;
-  height: auto;
-  float: left;
-  position: absolute;
-  top:1.3%;
-}
 .intro{
     height:100vh;
     position: relative;
@@ -116,8 +103,22 @@ a:hover{
   margin-left: 50%;
   transform: translateX(-50%);
 }
-#listItem1, #listItem2, #listItem3, #listItem4{
+#listItem1, #listItem2, #listItem3, #listItem4, #listItem5, #listItem6{
   display: none;
+}
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.title{
+    text-align: center;
+    font-size: 300%;
+}
+.arrow{
+  width: 60px;
+  height: auto;
+  float: left;
+  padding: 12px;
 }
 
 @media (max-width: 767px) {

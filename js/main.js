@@ -1,12 +1,39 @@
 $( document ).ready(function() {
-    setInterval(Showlist, 0);
+    setInterval(Item1, 0);
+    setInterval(Item2, 4000);
+    setInterval(Item3, 8000);
+    setInterval(Item4, 12000);
+    setInterval(Item5, 16000);
+    setInterval(Item6, 20000);
 });
 
 
-function Showlist()
+function Item1()
 {
-  $("#listItem1").fadeIn(1000).delay(2000).fadeOut(1000).delay(12000);
-  $("#listItem2").delay(4000).fadeIn(1000).delay(2000).fadeOut(1000).delay(8000);
-  $("#listItem3").delay(8000).fadeIn(1000).delay(2000).fadeOut(1000).delay(4000);
-  $("#listItem4").delay(12000).fadeIn(1000).delay(2000).fadeOut(1000);
+  $("#listItem1").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
+}
+
+function Item2()
+{
+  $("#listItem2").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
+}
+
+function Item3()
+{
+  $("#listItem3").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
+}
+
+function Item4()
+{
+  $("#listItem4").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
+}
+
+function Item5()
+{
+  $("#listItem5").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
+}
+
+function Item6()
+{
+  $("#listItem6").fadeIn(1000).delay(2000).fadeOut(950).delay(20000);
 }
