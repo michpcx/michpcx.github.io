@@ -206,6 +206,34 @@ a:hover {
   }
 }
 
+
+
+@media (max-width: 767px) {
+  .timeline-split .timeline, .timeline-centered .timeline {
+    display: table;
+  }
+  .timeline-split .timeline-item, .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+    display: none;
+  }
+  .timeline-split .timeline-content, .timeline-centered .timeline-content {
+    padding-left: 10px;
+  }
+  .timeline-split .timeline-info, .timeline-centered .timeline-info {
+    padding-right: 30px;
+  }
+  .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+    text-align: center;
+  }
+  .container-fluid{
+    padding: 0;
+    text-align: center;
+  }
+}
+
 /*----------------------------------------------
     MOD: TIMELINE CENTERED
 ----------------------------------------------*/

@@ -6,13 +6,16 @@ body{
 }
 .main{
     position: absolute;
-    width: 80%;
+    width: 90%;
     left: 50%;
     transform: translate(-50%);
 }
 .intro{
     height:100vh;
     position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .introblurb{
@@ -103,7 +106,7 @@ a:hover{
   margin-left: 50%;
   transform: translateX(-50%);
 }
-#listItem1, #listItem2, #listItem3, #listItem4, #listItem5, #listItem6{
+#listItem1, #listItem2, #listItem3, #listItem4, #listItem5, #listItem6, #listItem7{
   display: none;
 }
 .header {
