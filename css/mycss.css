@@ -45,6 +45,15 @@ body{
     font-size: 22px;
     font-family: 'Fjord One', serif;
 }
+.scroll-side{
+    position: absolute;
+    top: 20px;
+    right: 0%;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 22px;
+    font-family: 'Fjord One', serif;
+}
 
 .gallery{
     padding: 20px 20px 20px 20px;
@@ -105,6 +114,18 @@ a:hover{
   width: 60%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+.panel_img{
+  width: 90%;
+  height: auto;
+}
+.panel_img_small{
+  width: 50%;
+  height: auto;
+}
+.flag{
+  width: 27px;
+  height: auto;
 }
 #listItem1, #listItem2, #listItem3, #listItem4, #listItem5, #listItem6, #listItem7{
   display: none;
