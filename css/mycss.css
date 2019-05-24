@@ -6,9 +6,7 @@ body{
 }
 .main{
     position: absolute;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
+    width: 100%;
 }
 .intro{
     height:100vh;
@@ -17,24 +15,20 @@ body{
     left: 50%;
     transform: translate(-50%);
 }
-
 .introblurb{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Fjord One', serif;
 }
-
 .introblurb h1{
     font-size: 45pt;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 .introblurb p{
     font-size: 17pt;
     width: 60%;
 }
-
 .scroll{
     position: absolute;
     bottom: 20px;
@@ -45,7 +39,7 @@ body{
     font-size: 22px;
     font-family: 'Fjord One', serif;
 }
-.scroll-side{
+.flag-side{
     position: absolute;
     top: 20px;
     right: 0%;
@@ -54,7 +48,6 @@ body{
     font-size: 22px;
     font-family: 'Fjord One', serif;
 }
-
 .gallery{
     padding: 20px 20px 20px 20px;
 }
@@ -64,23 +57,20 @@ body{
 .panel, .image, .description {
     width: 100%;
 }
-.image, .description {
-    top: 0;
-    left: 0;
-}
 .image img {
     width: 100%;
 }
 .description {
-    background-color: #ccddff;
+    background-color: #DBE7FE;
     padding: 5px 1.3vw 5px 1.3vw;
     height: 100%;
     display: table;
 }
 .description-title{
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom:0px;
     font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 .description-position, .description-text{
     font-size: 1vw;
@@ -89,23 +79,19 @@ body{
     margin-bottom:.5vw;
     font-family: 'Fjord One', serif;
 }
-
+.container{
+    width: 100%;
+}
 .col-sm-6{
     padding: 20px 20px 20px 20px;
 }
 .col-sm-4{
     padding: 0px 20px 20px 20px;
 }
-
-.additional-link{
-    margin-bottom: 30px;
-}
-
 a{
     color: black;
     transition:color 0.2s ease-in-out;
 }
-
 a:hover{
     text-decoration:none;
     color: #007bff;
@@ -114,6 +100,13 @@ a:hover{
   width: 60%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+.description-position{
+  width: 100%;
+}
+.description-position i{
+  float: right;
+  margin-right: 5%;
 }
 .panel_img{
   width: 90%;
@@ -147,7 +140,13 @@ a:hover{
 
 @media (max-width: 767px) {
     .description-position, .description-text{
-        font-size: 2vw;
+        font-size: 1.5vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom:2vw;
+    }
+    .description-title{
+        font-size: 2.5vw;
         margin: 0;
         padding: 0;
         margin-bottom:2vw;
