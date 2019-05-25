@@ -2,7 +2,7 @@ body{
     background: url("../assets/back.png") fixed right top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f4f8ff;
+    background-color: #fdfff4;
 }
 .main{
     position: absolute;
@@ -73,7 +73,7 @@ body{
     text-align: center;
 }
 .description-position, .description-text{
-    font-size: 1vw;
+    font-size: 0.8vw;
     margin: 0;
     padding: 0;
     margin-bottom:.5vw;
@@ -138,9 +138,19 @@ a:hover{
   padding: 12px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .description-position, .description-text{
         font-size: 1.5vw;
+    }
+    .description-title{
+        font-size: 2.5vw;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .description-position, .description-text{
+        font-size: 1.7vw;
         margin: 0;
         padding: 0;
         margin-bottom:2vw;
