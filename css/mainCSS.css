@@ -230,16 +230,13 @@ a:hover{
       font-size: 17px;
   }
   .background_mobile {
-    display: block;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    z-index: -1;
+    display:block;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-image: url("../assets/back.png");
+  top: 0;
+  left: 0;
+
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 }
