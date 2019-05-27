@@ -171,6 +171,9 @@ a:hover{
   position:relative;
   width: 95%;
 }
+.background_mobile{
+  display: none;
+}
 
 
 @media (max-width: 1400px) {
@@ -223,6 +226,19 @@ a:hover{
       right: 20px;
   }
   .scroll{
-      bottom: 100px;
+      bottom: 90px;
+      font-size: 17px;
   }
+  .background_mobile {
+    display: contents;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../assets/back.png");
+    background-attachment: fixed;
+}
 }
