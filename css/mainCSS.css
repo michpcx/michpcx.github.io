@@ -222,4 +222,7 @@ a:hover{
   .flag-side{
       right: 20px;
   }
+  .scroll{
+      bottom: 120px;
+  }
 }
