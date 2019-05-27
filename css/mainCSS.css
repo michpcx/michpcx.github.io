@@ -230,7 +230,9 @@ a:hover{
       font-size: 17px;
   }
   .background_mobile {
-    display: contents;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     z-index: -1;
     position: fixed;
     top: 0;
@@ -239,6 +241,5 @@ a:hover{
     width: 100%;
     background-size: 100%;
     background-image: url("../assets/back.png");
-    background-attachment: fixed;
 }
 }
