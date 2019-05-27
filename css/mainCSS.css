@@ -235,7 +235,7 @@ a:hover{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-size: 100%;
     background-image: url("../assets/back.png");
