@@ -78,6 +78,12 @@ a:hover{
     text-decoration:none;
     color: #007bff;
 }
+#extra-margin{
+  margin-top: 20px;
+}
+#extra-margin2{
+  margin-top: 70px;
+}
 
 
 
@@ -161,14 +167,14 @@ a:hover{
 .panel_img{
   width: 120%;
   height: auto;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.60;
+  filter: alpha(opacity=60);
 }
 .panel_img_small{
   width: 60%;
   height: auto;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.60;
+  filter: alpha(opacity=60);
 }
 .row{
   left:54%;
