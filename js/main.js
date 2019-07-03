@@ -24,5 +24,35 @@ $( document ).ready(function() {
           .animate({opacity:1}, mainLoop);
     }
 
-    mainLoop();
+    function mainLoopPL(){
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("podróżowaniu."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("strategii wojennej."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("tworzeniu gier."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("politice."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("gier wideo."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("historii."); $(this).dequeue()})
+            .animate({opacity:1});
+        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
+            .queue(function(){$(this).text("eksploracją kosmosu."); $(this).dequeue()})
+            .animate({opacity:1}, mainLoop);
+      }
+
+    if($("#listItem").length){
+      mainLoop();
+    }
+
+    if($("#listItemPL").length){
+      mainLoopPL();
+    }
 });
