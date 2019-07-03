@@ -37,7 +37,7 @@ body{
     font-size: 17pt;
     width: 60%;
     color: #262626;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .scroll{
     position: absolute;
@@ -64,9 +64,6 @@ body{
 }
 .container{
     width: 100%;
-}
-#listItem1, #listItem2, #listItem3, #listItem4, #listItem5, #listItem6, #listItem7{
-  display: none;
 }
 a{
     color: black;
@@ -243,5 +240,26 @@ a:hover{
   .scroll{
       bottom: 90px;
       font-size: 17px;
+  }
+}
+@media (max-width: 490px) {
+  .description-title{
+      font-size: 30px;
+  }
+  .description-position, .description-text{
+      font-size: 14px;
+  }
+  .scroll{
+      bottom: 90px;
+      font-size: 15px;
+  }
+  .project-item{
+      width: 90%;
+  }
+  .row{
+    left:48%;
+    transform: translateX(-50%);
+    position:relative;
+    width: 95%;
   }
 }
