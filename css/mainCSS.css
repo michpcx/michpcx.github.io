@@ -83,6 +83,29 @@ a:hover{
 
 
 
+/*            Timeline              */
+.header{
+  text-align: center;
+  height:200px;
+}
+.arrow_div{
+  padding-top: 2%;
+  padding-left: 10%;
+  float: left;
+}
+.arrow{
+    width: 50px;
+    height: auto;
+}
+.header-middle{
+  float: right;
+  padding-top: 2%;
+  padding-right: 50%;
+  transform: translate(7.5%);
+}
+
+
+
 /*            GRID              */
 .gallery{
     padding: 20px 20px 20px 20px;
@@ -258,8 +281,5 @@ a:hover{
   }
   .row{
     left:48%;
-    transform: translateX(-50%);
-    position:relative;
-    width: 95%;
   }
 }

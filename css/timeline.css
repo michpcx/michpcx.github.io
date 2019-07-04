@@ -18,42 +18,12 @@ a:hover {
   text-decoration: none;
 }
 
-.example-header {
-  background: #3D4351;
-  color: #FFF;
-  font-weight: 300;
-  padding: 3em 1em;
-  text-align: center;
+.container-fluid .row-timeline {
+  width: 80%;
+  margin-left: 10%;
 }
-.example-header h1 {
-  color: #FFF;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-.example-header p {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
-.container-fluid .row {
-  padding: 0 0 4em 0;
-}
-.container-fluid .row:nth-child(even) {
+.container-fluid .row-timeline:nth-child(even) {
   background: #F1F4F5;
-}
-
-.example-title {
-  text-align: center;
-  margin-bottom: 60px;
-  padding: 3em 0;
-  border-bottom: 1px solid #E4EAEC;
-}
-.example-title p {
-  margin: 0 auto;
-  font-size: 16px;
-  max-width: 400px;
 }
 
 /*==================================
