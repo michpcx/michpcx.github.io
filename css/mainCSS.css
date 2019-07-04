@@ -58,6 +58,15 @@ body{
     font-size: 22px;
     font-family: 'Fjord One', serif;
 }
+.flag-side-timeline{
+    position: absolute;
+    top: 28px;
+    right: 102px;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 22px;
+    font-family: 'Fjord One', serif;
+}
 .flag{
   width: 27px;
   height: auto;
@@ -100,8 +109,11 @@ a:hover{
 .header-middle{
   float: right;
   padding-top: 2%;
-  padding-right: 50%;
-  transform: translate(7.5%);
+  margin-right: 50%;
+  transform: translate(56%);
+}
+.header-middle .title{
+  font-size: 35px;
 }
 
 
