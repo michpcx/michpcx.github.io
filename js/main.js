@@ -45,7 +45,7 @@ $( document ).ready(function() {
             .animate({opacity:1});
         $("#listItemPL").delay(2000).animate({opacity:0}, 500)
             .queue(function(){$(this).text("eksploracją kosmosu."); $(this).dequeue()})
-            .animate({opacity:1}, mainLoop);
+            .animate({opacity:1}, mainLoopPL);
       }
 
     if($("#listItem").length){
