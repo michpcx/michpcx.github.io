@@ -58,15 +58,6 @@ body{
     font-size: 22px;
     font-family: 'Fjord One', serif;
 }
-.flag-side-timeline{
-    position: absolute;
-    top: 28px;
-    right: 102px;
-    color: #000000;
-    white-space: nowrap;
-    font-size: 22px;
-    font-family: 'Fjord One', serif;
-}
 .flag{
   width: 27px;
   height: auto;
@@ -90,31 +81,6 @@ a:hover{
   margin-top: 50px;
 }
 
-
-
-/*            Timeline              */
-.header{
-  text-align: center;
-  height:200px;
-}
-.arrow_div{
-  padding-top: 2%;
-  padding-left: 10%;
-  float: left;
-}
-.arrow{
-    width: 50px;
-    height: auto;
-}
-.header-middle{
-  float: right;
-  padding-top: 2%;
-  margin-right: 50%;
-  transform: translate(56%);
-}
-.header-middle .title{
-  font-size: 35px;
-}
 
 
 

@@ -1,3 +1,10 @@
+/* Briberra */
+@font-face {
+  font-family: 'Briberra';
+  src: url('Briberra.otf');
+  src: local('Briberra'),
+       url('Briberra.ttf') format('truetype'),
+}
 /* latin */
 @font-face {
   font-family: 'Fjord One';

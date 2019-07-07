@@ -2,19 +2,19 @@
 <html lang="en">
     <head>
         <title>Michal's travel</title>
-		<link rel="shortcut icon" type="image/x-icon" href="assets/Source-code.ico">
+		    <link rel="shortcut icon" type="image/x-icon" href="assets/Source-code.ico">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Michal Pierzchalski">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/mainCSS.css" rel="stylesheet">
-        <link href="css/interestAnimation.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/timeline.css" rel="stylesheet">
+        <link href="css/travelCSS.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/slider.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     </head>
     <body>
         <div class="main">
@@ -22,194 +22,28 @@
             <script src="https://use.typekit.net/bkt6ydm.js"></script>
             <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-            <div class="header">
-              <div class="arrow_div">
-                <a href="index.html" ><img src="assets/right-arrow.png" alt="arrow" class="arrow"/></a>
-              </div>
-              <div class="header-middle">
-                <h2 class="title">Travel Timeline </h2>
-              </div>
+            <div class="arrow_div">
+              <a href="index.html" ><img src="assets/right-arrow.png" alt="arrow" class="arrow"/></a>
             </div>
 
-            <div class="flag-side-timeline">
-                <a href="travel-pl.html"><img class="flag" src="assets/pl.png" alt"pl" /></a>
-                <a href="travel.html"><img class="flag" src="assets/uk.png" alt"uk" /></a>
-            </div>
+            <ul class="cb-slideshow">
+                <li><span id="image1"></span></li>
+                <li><span id="image2"></span></li>
+                <li><span id="image3"></span></li>
+                <li><span id="image4"></span></li>
+                <li><span id="image5"></span></li>
+                <li><span id="image6"></span></li>
+                <li><span id="image7"></span></li>
+                <li><span id="image8"></span></li>
+                <li><span id="image9"></span></li>
+                <li><span id="image10"></span></li>
+                <li><span id="image11"></span></li>
+                <li><span id="image12"></span></li>
+                <li><span id="image13"></span></li>
+                <li><span id="image14"></span></li>
+            </ul>
 
-          <div class="container-fluid">
-              <div class="row-timeline">
-                  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                      <ul class="timeline timeline-split">
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>June, 2019</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Siem Reap, Cambodia</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>June, 2019</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Penang, Malaysia</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>April, 2019</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Kinver Edge, United Kingdom</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">2018</h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>July, 2018</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Cornwall, United Kingdom</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>April, 2018</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Kraków, Poland</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>March, 2018</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Lincoln, United Kingdom</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                        <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">2017</h2>
-                            </div>
-                        </li>
-                        <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Nov, 2017</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Inowrocław, Poland</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
-                            </div>
-                        </li>
-                          <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>July-Aug, 2017</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Porthclaw, United Kingdom</h3>
-                                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                      eu pede mollis pretium. Pellentesque ut neque. </p>
-                              </div>
-                          </li>
-                          <li class="timeline-item period">
-                              <div class="timeline-info"></div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h2 class="timeline-title">2015</h2>
-                              </div>
-                          </li>
-                          <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>Aug, 2015</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Blackpool, United Kingdom</h3>
-                                  <p>Following Czech Republic, we also decided to stay for two nights in Blackpool where I managed to see the famous Blackpool tower as well as see the British sea front. </p>
-                              </div>
-                          </li>
-                          <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>July-Aug, 2015</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Špindlerův Mlýn, Czech Republic</h3>
-                                  <p>In 2015, me and my family went together to Czech Republic, just close to the Polish border. There I zipped at the height of 25 metres along the Labská reservoir dam. If you ever are in Czech Republic, definitely try borůvkové palačinky :) </p>
-                              </div>
-                          </li>
-			  <li class="timeline-item period">
-                              <div class="timeline-info"></div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h2 class="timeline-title">2014</h2>
-                              </div>
-                          </li>
-			                            <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>Aug, 2014</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Saint-Valery-sur-Somme, France</h3>
-                                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. </p>
-                              </div>
-                          </li>
-                        </li>
-      <li class="timeline-item period">
-                            <div class="timeline-info"></div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h2 class="timeline-title">2009</h2>
-                            </div>
-                        </li>
-                                <li class="timeline-item">
-                            <div class="timeline-info">
-                                <span>Aug, 2009</span>
-                            </div>
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3 class="timeline-title">Darłówko, Poland</h3>
-                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. </p>
-                            </div>
-                        </li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-          </div>
-
+            <img class="main-Title" src="assets/adventure.png" />
         </div>
       </body>
 </html>
