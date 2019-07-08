@@ -158,6 +158,39 @@ body{
 	opacity: 1;
 }
 
+
+/*         Map section        */
+.map-section{
+	position: absolute;
+	background-color: white;
+	top: 100%;
+	z-index: 15;
+	width: 100%;
+}
+.subunit {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 1px;
+}
+text.subunit-label {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 23px;
+		font-weight: 150;
+		text-anchor: middle;
+		fill: #000;
+}
+.subunit-label {
+		display: none;
+}
+.graticule {
+		display: none;
+}
+svg{
+	position: absolute;
+	top: 100%;
+	z-index: 15;
+}
+
 @media screen and (max-width: 840px) {
   .main-Title{
     width: 80%;
