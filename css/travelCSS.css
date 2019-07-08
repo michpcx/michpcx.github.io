@@ -52,11 +52,11 @@ body{
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 80s linear infinite 0s;
-    -moz-animation: imageAnimation 80s linear infinite 0s;
-    -o-animation: imageAnimation 80s linear infinite 0s;
-    -ms-animation: imageAnimation 80s linear infinite 0s;
-    animation: imageAnimation 80s linear infinite 0s;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
 }
 .cb-slideshow #image1{
     background-image: url(../assets/backImages/1.jpg)
@@ -96,106 +96,50 @@ body{
     -ms-animation-delay: 30s;
     animation-delay: 30s;
 }
-.cb-slideshow #image7 {
-    -webkit-animation-delay: 36s;
-    -moz-animation-delay: 36s;
-    -o-animation-delay: 36s;
-    -ms-animation-delay: 36s;
-    animation-delay: 36s;
-}
-.cb-slideshow #image8 {
-    -webkit-animation-delay: 42s;
-    -moz-animation-delay: 42s;
-    -o-animation-delay: 42s;
-    -ms-animation-delay: 42s;
-    animation-delay: 42s;
-}
-.cb-slideshow #image9 {
-    -webkit-animation-delay: 48s;
-    -moz-animation-delay: 48s;
-    -o-animation-delay: 48s;
-    -ms-animation-delay: 48s;
-    animation-delay: 48s;
-}
-.cb-slideshow #image10 {
-    -webkit-animation-delay: 54s;
-    -moz-animation-delay: 54s;
-    -o-animation-delay: 54s;
-    -ms-animation-delay: 54s;
-    animation-delay: 54s;
-}
-.cb-slideshow #image11 {
-    -webkit-animation-delay: 60s;
-    -moz-animation-delay: 60s;
-    -o-animation-delay: 60s;
-    -ms-animation-delay: 60s;
-    animation-delay: 60s;
-}
-.cb-slideshow #image12 {
-    -webkit-animation-delay: 66s;
-    -moz-animation-delay: 66s;
-    -o-animation-delay: 66s;
-    -ms-animation-delay: 66s;
-    animation-delay: 66s;
-}
-.cb-slideshow #image13 {
-    -webkit-animation-delay: 72s;
-    -moz-animation-delay: 72s;
-    -o-animation-delay: 72s;
-    -ms-animation-delay: 72s;
-    animation-delay: 72s;
-}
-.cb-slideshow #image14 {
-    -webkit-animation-delay: 78s;
-    -moz-animation-delay: 78s;
-    -o-animation-delay: 78s;
-    -ms-animation-delay: 78s;
-    animation-delay: 78s;
-}
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    5% { opacity: 1;
          -webkit-animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    17% { opacity: 0 }
+    20% { opacity: 1 }
+    25% { opacity: 0 }
     100% { opacity: 0 }
 }
 @-moz-keyframes imageAnimation {
     0% { opacity: 0;
     -moz-animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    5% { opacity: 1;
          -moz-animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    17% { opacity: 0 }
+    20% { opacity: 1 }
+    25% { opacity: 0 }
     100% { opacity: 0 }
 }
 @-o-keyframes imageAnimation {
     0% { opacity: 0;
     -o-animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    5% { opacity: 1;
          -o-animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    17% { opacity: 0 }
+    20% { opacity: 1 }
+    25% { opacity: 0 }
     100% { opacity: 0 }
 }
 @-ms-keyframes imageAnimation {
     0% { opacity: 0;
     -ms-animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    5% { opacity: 1;
          -ms-animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    17% { opacity: 0 }
+    20% { opacity: 1 }
+    25% { opacity: 0 }
     100% { opacity: 0 }
 }
 @keyframes imageAnimation {
     0% { opacity: 0;
     animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    5% { opacity: 1;
          animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    17% { opacity: 0 }
+    20% { opacity: 1 }
+    25% { opacity: 0 }
     100% { opacity: 0 }
 }
 /* Show at least something when animations not supported */
