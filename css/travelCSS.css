@@ -26,6 +26,17 @@ body{
   width: 50%;
   text-align: center;
 }
+.refresh{
+    position: absolute;
+    bottom: 20px;
+    right: 2%;
+    color: #000000;
+    white-space: nowrap;
+}
+.refresh-icon{
+	width: 200px;
+	height: auto;
+}
 
 
 
@@ -59,7 +70,7 @@ body{
     animation: imageAnimation 36s linear infinite 0s;
 }
 .cb-slideshow #image1{
-    background-image: url(../assets/backImages/1.jpg)
+
 }
 .cb-slideshow #image2 {
     -webkit-animation-delay: 6s;
