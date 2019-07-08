@@ -1,0 +1,52 @@
+{
+  "aggregations": {
+    "world_map": {
+      "buckets": [
+        {
+          "key": "GBR",
+          "doc_count": 1
+        },
+        {
+          "key": "BEL",
+          "doc_count": 1
+        },
+        {
+          "key": "FRA",
+          "doc_count": 1
+        },
+        {
+          "key": "NLD",
+          "doc_count": 1
+        },
+        {
+          "key": "ESP",
+          "doc_count": 1
+        },
+        {
+          "key": "DEU",
+          "doc_count": 1
+        },
+        {
+          "key": "POL",
+          "doc_count": 1
+        },
+        {
+          "key": "CZE",
+          "doc_count": 1
+        },
+        {
+          "key": "KHM",
+          "doc_count": 1
+        },
+        {
+          "key": "MYS",
+          "doc_count": 1
+        },
+        {
+          "key": "QAT",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
