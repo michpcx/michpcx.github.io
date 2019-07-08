@@ -162,4 +162,10 @@ body{
   .main-Title{
     width: 80%;
   }
+	.refresh{
+	    bottom: 10px;
+	}
+	.arrow_div{
+	  padding-left: 5%;
+	}
 }
