@@ -162,22 +162,23 @@ body{
 /*         Map section        */
 .map-section{
 	position: absolute;
-	background-color: white;
+	background-image: linear-gradient(#fff9e0, white, white, white);
 	top: 100%;
 	z-index: 15;
 	width: 100%;
+	padding-bottom: 10px;
+	overflow: hidden;
 }
 .subunit {
 		fill: none;
-		stroke: #000000;
+		stroke: #fff;
 		stroke-width: 1px;
 }
 text.subunit-label {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 23px;
-		font-weight: 150;
 		text-anchor: middle;
-		fill: #000;
+		fill: #5e5d5d;
 }
 .subunit-label {
 		display: none;
@@ -186,9 +187,10 @@ text.subunit-label {
 		display: none;
 }
 svg{
-	position: absolute;
-	top: 100%;
 	z-index: 15;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
 }
 
 @media screen and (max-width: 840px) {
