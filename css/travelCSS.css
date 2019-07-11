@@ -162,7 +162,7 @@ body{
 /*         Map section        */
 .map-section{
 	position: absolute;
-	background-image: linear-gradient(#fff9e0, white, white, white);
+	background-image: linear-gradient(#fcf8e3, white, white, white);
 	top: 100%;
 	z-index: 15;
 	width: 100%;
@@ -175,10 +175,10 @@ body{
 		stroke-width: 1px;
 }
 text.subunit-label {
-		font-family: Arial, sans-serif;
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 23px;
 		text-anchor: middle;
-		fill: #5e5d5d;
+		fill: #787a6d;
 }
 .subunit-label {
 		display: none;
