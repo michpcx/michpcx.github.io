@@ -15,6 +15,7 @@
         <script src="js/main.js"></script>
         <script src="js/slider.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main">
@@ -94,7 +95,7 @@
 
               $("svg").prependTo(".map-section");
               var svgHeight = $("svg").height();
-              $(".map-section").css("height", svgHeight);
+              $(".map-section").css("height", svgHeight*0.8);
 
               function draw(data) {
                   d3.json('js/world.json', function(error, world) {
@@ -119,7 +120,6 @@
                       subunits.features = subunits.features.filter(function(d){ return d.id !== "ATA"; });
                       console.log('subunits',subunits);
                       minDocCount = d3.min(subunits.features, function(d){ return d.properties.doc_count; });
-                      console.log('minDocCount',minDocCount);
                       var doc_counts = subunits.features.map(function(d){ return d.properties.doc_count; });
                       doc_counts = doc_counts.filter(function(d){ return d; }).sort(d3.ascending);
                       //console.log('doc_counts',doc_counts);
@@ -138,15 +138,10 @@
                           //.attr('transform', function(d) { return 'translate('+ path.centroid(d) +')'; })
                           .attr('transform', function(d) { return 'translate('+(width-((5*d.properties.name.length)+50))+','+(35)+')'; })
                           .attr('dy', '.35em')
-                          .attr('filter', 'url(#gray-background)')
                           .append('svg:tspan')
                           .attr('x', 0)
                           .attr('dy', 5)
-                          .text(function(d) { return d.properties.name; })
-                          .append('svg:tspan')
-                          .attr('x', 0)
-                          .attr('dy', 20)
-                          .text(function(d) { return d.properties.doc_count ? d.properties.doc_count : ''; });
+                          .text(function(d) { return d.properties.name; });
               }
 
               function mouseoverLegend(datum, index) {
@@ -167,14 +162,12 @@
                   //filter event for this country should be applied here
                   console.log('coutryclicked datum', datum);
               }
+
               function heatColor(d) {
                   if (quantiles['0.95'] === 0 && minDocCount === 0) return '#bfcedb';
                   if (!d.properties.doc_count) return '#bfcedb';
                   if (d.properties.doc_count > quantiles['0.95']) return palette;
                   if (quantiles['0.95'] == minDocCount) return palette;
-                  var diffDocCount = quantiles['0.95'] - minDocCount;
-                  var diffDocCountDatum = quantiles['0.95'] - d.properties.doc_count;
-                  var diffDatumDiffDoc = diffDocCount - diffDocCountDatum;
                   return palette;
               }
           </script>
