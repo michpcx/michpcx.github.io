@@ -49,7 +49,7 @@
           <script>
               var mapdata = {};
               var palette = '#3b598a';
-              var width = 1200, height = 1150;
+              var width = $(window).width()*0.65, height = $(window).height()*1.25;
               var minDocCount = 0, quantiles = {};
               // projection definitions
               var projection = d3.geo.mercator()
@@ -95,7 +95,7 @@
 
               $("svg").prependTo(".map-section");
               var svgHeight = $("svg").height();
-              $(".map-section").css("height", svgHeight*0.8);
+              //$(".map-section").css("height", svgHeight*1);
 
               function draw(data) {
                   d3.json('js/world.json', function(error, world) {
