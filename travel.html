@@ -49,7 +49,17 @@
           <script>
               var mapdata = {};
               var palette = '#3b598a';
-              var width = $(window).width()*0.65, height = $(window).height()*1.25;
+              if ($(window).width() <= 800) {
+                var width = $(window).width()*1.6, height = $(window).height()*1.2;
+              }else if ($(window).width() <= 1000 && $(window).width() > 700) {
+                var width = $(window).width()*1.6, height = $(window).height()*1.35;
+              } else if($(window).width() > 1000 && $(window).width() < 1300){
+                var width = $(window).width()*1, height = $(window).height()*1.25;
+              } else if($(window).width() > 1300 && $(window).width() < 1600){
+                var width = $(window).width()*0.8, height = $(window).height()*1.25;
+              } else if($(window).width() >= 1600) {
+                var width = $(window).width()*0.65, height = $(window).height()*1.25;
+              }
               var minDocCount = 0, quantiles = {};
               // projection definitions
               var projection = d3.geo.mercator()
