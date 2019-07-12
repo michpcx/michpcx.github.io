@@ -194,6 +194,21 @@ svg{
 	margin-top: 50px;
 }
 
+@media screen and (max-width: 1300px) {
+	path{
+		transform-origin: 50% 50%;
+		transform: scale(0.8);
+	}
+}
+@media screen and (max-width: 1000px) {
+	path{
+		transform-origin: 50% 50%;
+		transform: scale(0.6);
+	}
+	svg{
+		margin-top: 0px;
+	}
+}
 @media screen and (max-width: 840px) {
   .main-Title{
     width: 80%;
@@ -203,5 +218,14 @@ svg{
 	}
 	.arrow_div{
 	  padding-left: 5%;
+	}
+}
+@media screen and (max-width: 760px) {
+	path{
+		transform-origin: 50% 50%;
+		transform: scale(0.5);
+	}
+	svg{
+		margin-top: 0px;
 	}
 }
