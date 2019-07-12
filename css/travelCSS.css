@@ -208,6 +208,9 @@ svg{
 	svg{
 		margin-top: 0px;
 	}
+	svg text{
+		transform: translate(50%, 100px);
+	}
 }
 @media screen and (max-width: 840px) {
   .main-Title{
@@ -227,5 +230,8 @@ svg{
 	}
 	svg{
 		margin-top: 0px;
+	}
+	svg text{
+		transform: translate(50%, 250px);
 	}
 }
