@@ -25,7 +25,7 @@ body{
     top: 47%;
     left: 17%;
     transform: translateY(-50%);
-    font-family: 'Fjord One', serif;
+    font-family: 'Louis George Cafe', serif;
 }
 .text_centre h1{
     font-size: 45pt;
@@ -35,7 +35,6 @@ body{
 }
 .text_centre p{
     font-size: 17pt;
-    width: 60%;
     color: #262626;
     margin-bottom: 20px;
 }
@@ -47,7 +46,7 @@ body{
     color: #000000;
     white-space: nowrap;
     font-size: 22px;
-    font-family: 'Fjord One', serif;
+    font-family: 'Louis George Cafe', serif;
 }
 .flag-side{
     position: absolute;
@@ -80,6 +79,155 @@ a:hover{
 #extra-margin2{
   margin-top: 50px;
 }
+
+
+
+.spot {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.svg-wrapper-button {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #769de0;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+#button_text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+#button_text .text {
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+.svg-wrapper-button:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+.wrapper-button{
+  margin-top: 10%;
+}
+
+
+
+/*            PROJECT             */
+.project-section {
+  align-items: center;
+	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project {
+	background-color: #d7e3f4;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	margin: 20px;
+  margin-bottom: 40px;
+	overflow: hidden;
+	width: 70%;
+  height: 200px;
+  box-sizing: border-box;
+  font-family: 'Louis George Cafe', serif;
+}
+.project h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.project h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+.project-preview {
+	background-color: #8faeef;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.project-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+.project-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #8faeef;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+.btn {
+	background-color: #8faeef;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
 
 
 
