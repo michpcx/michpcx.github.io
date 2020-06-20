@@ -1,28 +1,6 @@
 $( document ).ready(function() {
 
-  function mainLoop(){
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("travelling."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("war strategy."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("game making."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("politics."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("video games."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("history."); $(this).dequeue()})
-          .animate({opacity:1});
-      $("#listItem").delay(2000).animate({opacity:0}, 500)
-          .queue(function(){$(this).text("space exploration."); $(this).dequeue()})
-          .animate({opacity:1}, mainLoop);
-    }
+
 
     function mainLoopPL(){
         $("#listItemPL").delay(2000).animate({opacity:0}, 500)
@@ -48,11 +26,40 @@ $( document ).ready(function() {
             .animate({opacity:1}, mainLoopPL);
       }
 
-    if($("#listItem").length){
-      mainLoop();
-    }
-
-    if($("#listItemPL").length){
-      mainLoopPL();
-    }
+            var words = document.querySelectorAll(".word");
+        words.forEach(function (word) {
+            var letters = word.textContent.split("");
+            word.textContent = "";
+            letters.forEach(function (letter) {
+                var span = document.createElement("span");
+                span.textContent = letter;
+                span.className = "letter";
+                word.append(span);
+            });
+        });
+        var currentWordIndex = 0;
+        var maxWordIndex = words.length - 1;
+        words[currentWordIndex].style.opacity = "1";
+        var rotateText = function () {
+            var currentWord = words[currentWordIndex];
+            var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+            // rotate out letters of current word
+            Array.from(currentWord.children).forEach(function (letter, i) {
+                setTimeout(function () {
+                    letter.className = "letter out";
+                }, i * 80);
+            });
+            // reveal and rotate in letters of next word
+            nextWord.style.opacity = "1";
+            Array.from(nextWord.children).forEach(function (letter, i) {
+                letter.className = "letter behind";
+                setTimeout(function () {
+                    letter.className = "letter in";
+                }, 340 + i * 80);
+            });
+            currentWordIndex =
+                currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+        };
+        rotateText();
+        setInterval(rotateText, 4000);
 });
