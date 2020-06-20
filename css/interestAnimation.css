@@ -137,3 +137,14 @@ li {
 .sun-flower {
   color: #a3945b;
 }
+
+
+
+@media (max-width: 970px) {
+  .interest-list{
+    width: 200px;
+  }
+  .main_description{
+    text-align: center;
+  }
+}

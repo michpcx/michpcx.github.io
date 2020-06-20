@@ -169,19 +169,13 @@ a:hover{
 	max-width: 250px;
   min-width: 250px;
 }
-
-.project-preview a {
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	opacity: 0.6;
-	margin-top: 30px;
-	text-decoration: none;
-}
 .project-info {
 	padding: 30px;
 	position: relative;
 	width: 100%;
+  background-position: center;
+  background-color: hsla(215.2,56.9%,90%,0.80);
+  background-blend-mode: overlay;
 }
 
 .progress-container {
@@ -231,50 +225,78 @@ a:hover{
 }
 
 
+.background-hms{
+    background-image: url("../assets/hms.jpg");
+}
+.background-richy{
+    background-image: url("../assets/richy.jpg");
+}
+.background-backH{
+  background-image: url("../assets/backhome.jpg");
+}
+.background-upris{
+  background-image: url("../assets/uprising1944.jpg");
+}
+.background-adidas{
+  background-image: url("../assets/adidas.jpg");
+}
+.background-malay{
+  background-image: url("../assets/malaysia.jpg");
+}
 
 
 
 
-@media (max-width: 1400px) {
-  .project-item{
-      width: 23%;
+
+@media (max-width: 1160px) {
+  .project{
+      height: 270px;
   }
 }
 @media (max-width: 1070px) {
-  .description-title{
-      font-size: 25px;
-  }
-  .description-position, .description-text{
-      font-size: 10px;
-  }
-  .project-item{
-      padding-right: 45px;
+  .progress-container {
+  	position: relative;
+  	top: 0px;
+  	right: 0px;
+  	text-align: center;
+  	width: 150px;
   }
 }
-@media (max-width: 900px) {
-  .description-position, .description-text{
-      font-size: 12px;
+@media (max-width: 960px) {
+  .project{
+      height: 300px;
   }
-  .project-item{
-      width: 38%;
+  .btn {
+  	border-radius: 0px;
+  	font-size: 20px;
+  	bottom: 0px;
+  	right: 0%;
+    width: 100%;
+  	background-color: #85a0db;
+  }
+  .project-preview {
+    max-width: 150px;
+    min-width: 150px;
+  }
+  .text_centre{
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 770px) {
+  .project {
+    width: 90%;
   }
 }
 @media (max-width: 650px) {
-  .description-title{
-      font-size: 30px;
-  }
-  .description-position, .description-text{
-      font-size: 15px;
-  }
-  .project-item{
-      width: 80%;
-      height: auto;
-  }
   .intro{
       height:100vh;
       width: 100%;
       left: 0;
-      transform: translate(0%);
+      transform: translate(50%);
   }
   .text_centre{
       left: 5%;
@@ -290,21 +312,26 @@ a:hover{
       font-size: 17px;
   }
 }
+@media (max-width: 600px) {
+  .project {
+    width: 95%;
+  }
+  .project h2 {
+  	letter-spacing: 1px;
+  	margin: 5px 0;
+    font-size: 20px;
+  }
+  .project span {
+    font-size: 13px;
+  }
+  .project-preview {
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
 @media (max-width: 490px) {
-  .description-title{
-      font-size: 30px;
-  }
-  .description-position, .description-text{
-      font-size: 14px;
-  }
   .scroll{
       bottom: 90px;
       font-size: 15px;
-  }
-  .project-item{
-      width: 90%;
-  }
-  .row{
-    left:48%;
   }
 }
