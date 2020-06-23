@@ -309,14 +309,11 @@ a:hover{
   	padding: 15px;
   }
   .wrapper-button{
-    margin-top: 15%;
+    margin-top: 20%;
   }
   .text_centre{
       width: 100%;
       left: 50%;
-      /*top: 45%;
-      left: 20%;
-      transform: translateY(-50%);*/
   }
 }
 @media (max-width: 650px) {
