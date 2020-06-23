@@ -137,6 +137,7 @@ a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .project {
 	background-color: #d7e3f4;
@@ -223,7 +224,6 @@ a:hover{
   cursor: pointer;
 	letter-spacing: 1px;
 }
-
 .project-info li{
   margin: -12px 0;
 }
@@ -300,6 +300,10 @@ a:hover{
 @media (max-width: 770px) {
   .project {
     width: 90%;
+  }
+  .project-info li{
+    margin: 0px 0;
+    line-height: 170%;
   }
 }
 @media (max-width: 650px) {
