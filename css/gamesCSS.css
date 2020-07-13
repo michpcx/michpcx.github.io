@@ -1,0 +1,76 @@
+/*            MAIN              */
+body{
+    background-color: black;
+}
+.game {
+  float: left;
+  width: 33.33%;
+  height: 99vh;
+  overflow: hidden;
+}
+.game:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.first {
+  background: url('../assets/backhome.jpg') 70% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform ease 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.second {
+  background: url('../assets/uprising1944.jpg') 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform ease 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.third {
+  background: url('../assets/lastresort.jpg') 30% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform ease 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.info{
+  color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.0;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0.375770376509979) 0%, rgba(0,0,0,0) 92%);
+}
+.info:hover{
+    transform: scale(0.832);
+    opacity: 1.0;
+}
+.first:hover, .second:hover, .third:hover {
+    transform: scale(1.2);
+}
+.title{
+  padding-top: 20%;
+  font-size: 500%;
+  font-family: 'Louis George Cafe', serif;
+  display: flex;
+  justify-content: center;
+}
+.description{
+  font-size: 120%;
+  font-family: 'Louis George Cafe', serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  text-align: justify;
+}
+
+
+@media (max-width: 1050px) {
+  .game {
+    width: 100%;
+  }
+}
