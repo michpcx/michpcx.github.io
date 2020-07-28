@@ -309,15 +309,16 @@ a:hover{
   }
   .project h2 {
   	letter-spacing: 1px;
-  	margin: 5px 0;
+  	margin: 0px 0;
     font-size: 20px;
   }
   .project span {
     font-size: 11.5px;
   }
   .project-preview {
-    max-width: 90px;
-    min-width: 90px;
+    max-width: 100px;
+    min-width: 100px;
+    padding: 15px;
   }
   .project-info {
     padding: 10px;
@@ -329,6 +330,9 @@ a:hover{
     right: 0%;
     width: 100%;
     background-color: #85a0db;
+  }
+  .me_pic{
+    margin-left: 105px;
   }
 }
 /*
