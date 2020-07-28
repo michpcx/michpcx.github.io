@@ -73,59 +73,20 @@ a:hover{
     text-decoration:none;
     color: #007bff;
 }
-#extra-margin{
-  margin-top: 40px;
-}
-#extra-margin2{
-  margin-top: 50px;
-}
 .name{
   color: #1D5378;
 }
-.spot {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.main_icon{
+  width: 50px;
+  height: auto;
+  margin-right: 50px;
 }
-.svg-wrapper-button {
+.wrapper-button {
   margin-top: 0;
-  position: relative;
-  width: 150px;
-  /*make sure to use same height/width as in the html*/
-  height: 40px;
-  display: inline-block;
   border-radius: 3px;
-  margin-left: 5px;
-  margin-right: 5px
-}
-#shape {
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: #769de0;
-  stroke-dasharray: 85 400;
-  stroke-dashoffset: -220;
-  transition: 1s all ease;
-}
-#button_text {
-  margin-top: -35px;
-  text-align: center;
-}
-
-#button_text .text {
-  color: black;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.3em;
-}
-.svg-wrapper-button:hover #shape {
-  stroke-dasharray: 50 0;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke: #06D6A0;
-}
-.wrapper-button{
-  margin-top: 10%;
+  margin-top: 12%;
+  margin-left: 70px;
+  display: flex;
 }
 
 
@@ -293,9 +254,6 @@ a:hover{
     flex-direction: column;
     width: 80%;
   }
-  .wrapper-button{
-    width: 75%;
-  }
 }
 @media (max-width: 770px) {
   .project {
@@ -307,9 +265,6 @@ a:hover{
   }
   .project-info {
   	padding: 15px;
-  }
-  .wrapper-button{
-    margin-top: 20%;
   }
   .text_centre{
       width: 100%;
@@ -351,11 +306,6 @@ a:hover{
   .project-preview {
     max-width: 100px;
     min-width: 100px;
-  }
-}
-@media (max-width: 575px) {
-  .wrapper-button{
-    width: 100%;
   }
 }
 @media (max-width: 490px) {
