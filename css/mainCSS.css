@@ -88,6 +88,38 @@ a:hover{
   margin-left: 70px;
   display: flex;
 }
+.spot{
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+}
+.cert{
+  background-color: #b30000;
+}
+.work{
+  background-color: #00b3b3;
+}
+.inte{
+  background-color: #000066;
+}
+.exch{
+  background-color: #6b621f;
+}
+.vol{
+  background-color: #62285e;
+}
+.proj{
+  background-color: #314559;
+}
+.awa{
+  background-color: #ffccff;
+}
+.comp{
+  background-color: #ffffcc;
+}
+.cour{
+  background-color: #d1d1e0;
+}
 
 
 
@@ -118,6 +150,7 @@ a:hover{
 	margin: 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+  margin-left: 15px;
 }
 
 .project h2 {
