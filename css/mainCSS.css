@@ -82,8 +82,6 @@ a:hover{
   margin-right: 50px;
 }
 .wrapper-button {
-  margin-top: 0;
-  border-radius: 3px;
   margin-top: 3%;
   margin-left: 27%;
   display: flex;
@@ -131,7 +129,6 @@ a:hover{
 .bio{
   display:flex;
   align-items:center;
-  justify-content:space-between;
 }
 
 
@@ -262,12 +259,31 @@ a:hover{
 @media (max-width: 1160px) {
   .project{
       height: 270px;
+      width: 90%;
   }
-  .project{
-      width: 80%;
+  .scroll{
+      bottom: 20px;
+      font-size: 17px;
+  }
+  .text_centre{
+      top: 47%;
+      left: 3%;
+  }
+  .bio{
+    display:contents;
+    align-items:center;
+  }
+  .me_pic{
+    display:block;
+    margin:0 auto;
+  }
+  .wrapper-button {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 0%;
   }
 }
-@media (max-width: 1070px) {
+@media (max-width: 850px) {
   .progress-container {
   	position: relative;
   	top: 0px;
@@ -275,7 +291,47 @@ a:hover{
   	text-align: center;
   	width: 150px;
   }
+  .wrapper-button {
+    margin-top: 20%;
+    margin-left: 5%;
+  }
 }
+@media (max-width: 650px) {
+  .wrapper-button {
+    margin-top: 35%;
+    margin-left: 0%;
+    width: 80%;
+  }
+  .project {
+    width: 98%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project h2 {
+  	letter-spacing: 1px;
+  	margin: 5px 0;
+    font-size: 20px;
+  }
+  .project span {
+    font-size: 11.5px;
+  }
+  .project-preview {
+    max-width: 90px;
+    min-width: 90px;
+  }
+  .project-info {
+    padding: 10px;
+  }
+  .btn {
+    border-radius: 0px;
+    font-size: 20px;
+    bottom: 0px;
+    right: 0%;
+    width: 100%;
+    background-color: #85a0db;
+  }
+}
+/*
 @media (max-width: 960px) {
   .project{
       height: 300px;
@@ -363,3 +419,4 @@ a:hover{
       top: 10%;
   }
 }
+*/
