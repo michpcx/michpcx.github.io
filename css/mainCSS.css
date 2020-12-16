@@ -272,7 +272,7 @@ a:hover{
       font-size: 17px;
   }
   .text_centre{
-      top: 25%;
+      top: 17.5%;
       left: 0%;
   }
   .bio{
@@ -310,8 +310,7 @@ a:hover{
   	width: 150px;
   }
   .wrapper-button {
-    margin-top: 20%;
-    margin-left: 5%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 650px) {
@@ -344,96 +343,4 @@ a:hover{
     width: 100%;
     background-color: #85a0db;
   }
-  .me_pic{
-    /*margin-left: 105px;*/
-  }
 }
-/*
-@media (max-width: 960px) {
-  .project{
-      height: 300px;
-  }
-  .btn {
-  	border-radius: 0px;
-  	font-size: 20px;
-  	bottom: 0px;
-  	right: 0%;
-    width: 100%;
-  	background-color: #85a0db;
-  }
-  .project-preview {
-    max-width: 150px;
-    min-width: 150px;
-  }
-  .text_centre{
-    left: 45%;
-    top: 20%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
-}
-@media (max-width: 770px) {
-  .project {
-    width: 90%;
-  }
-  .project-info li{
-    margin: 0px 0;
-    line-height: 170%;
-  }
-  .project-info {
-  	padding: 15px;
-  }
-  .text_centre{
-      width: 100%;
-      left: 50%;
-  }
-}
-@media (max-width: 650px) {
-  .intro{
-      height:100vh;
-      width: 100%;
-      left: 0;
-      transform: translate(0%);
-  }
-  .text_centre p{
-      width: 90%;
-  }
-  .flag-side{
-      right: 20px;
-  }
-  .scroll{
-      bottom: 50px;
-      font-size: 17px;
-  }
-}
-@media (max-width: 600px) {
-  .project {
-    width: 98%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .project h2 {
-  	letter-spacing: 1px;
-  	margin: 5px 0;
-    font-size: 20px;
-  }
-  .project span {
-    font-size: 13px;
-  }
-  .project-preview {
-    max-width: 100px;
-    min-width: 100px;
-  }
-}
-@media (max-width: 490px) {
-  .scroll{
-      bottom: 20px;
-      font-size: 15px;
-  }
-  .text_centre{
-      top: 10%;
-  }
-}
-*/
