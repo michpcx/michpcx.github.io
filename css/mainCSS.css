@@ -4,7 +4,7 @@ html{
   width:100%;
 }
 body{
-    background: url("../assets/back.png") fixed right top;
+    background: url("../assets/back.jpg") fixed right top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fdfff4;
