@@ -10,81 +10,84 @@ body{
     background-color: #fdfff4;
     height:100%;
 }
+li {
+  line-height:40px;
+  margin:0;
+    }
 .main{
     width: 100%;
 }
 .intro{
     height:100vh;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    position: relative;
+    width: 100%;
 }
 .text_centre{
-    position: fixed;
-    top: 47%;
-    left: 12%;
-    transform: translateY(-50%);
+    position: relative;
+    top: 30%;
+    /*left: 50%;*/
+    text-align: center;
+    width: 100%;
     font-family: 'Louis George Cafe', serif;
 }
 .text_centre h1{
-    font-size: 45pt;
+    font-size: 47.5pt;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #262626;
+    color: #D6D4D4;
     margin-bottom: 10px;
 }
 .text_centre p{
-    font-size: 17pt;
-    color: #262626;
+    font-size: 18.5pt;
+    color: #D6D4D4;
     margin-bottom: 20px;
 }
 .scroll{
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translate(-50%);
-    color: #000000;
-    white-space: nowrap;
-    font-size: 22px;
-    font-family: 'Louis George Cafe', serif;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #D6D4D4;
+  white-space: nowrap;
+  font-size: 22px;
+  font-family: 'Louis George Cafe', serif;
 }
 .flag-side{
-    position: absolute;
-    top: 20px;
-    right: 0;
-    color: #000000;
-    white-space: nowrap;
-    font-size: 22px;
-    font-family: 'Fjord One', serif;
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  color: #000000;
+  white-space: nowrap;
+  font-size: 22px;
+  font-family: 'Fjord One', serif;
 }
 .flag{
-  width: 27px;
+  width: 31px;
   height: auto;
 }
 .container{
     width: 100%;
 }
 a{
-    color: black;
-    transition:color 0.2s ease-in-out;
-    text-decoration:none;
+  color: black;
+  transition:color 0.2s ease-in-out;
+  text-decoration:none;
 }
 a:hover{
-    text-decoration:none;
-    color: #007bff;
+  text-decoration:none;
+  color: #007bff;
 }
 .name{
-  color: #1D5378;
+  color: #4583AD;
 }
 .main_icon{
-  width: 50px;
+  width: 40px;
   height: auto;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .wrapper-button {
-  margin-top: 3%;
-  margin-left: 27%;
+  margin-top: 40px;
   display: flex;
+  justify-content: center;
 }
 .spot{
   width: 12px;
@@ -123,11 +126,12 @@ a:hover{
   background-size: cover;
   width: 130px;
   height: 130px;
-  margin-top: 50px;
-  margin-right: 30px;
+  transform: translateX(-50%);
+  left:50%;
+  position: relative;
 }
 .bio{
-  display:flex;
+  /*display:flex;*/
   align-items:center;
 }
 
@@ -294,6 +298,9 @@ a:hover{
   .wrapper-button {
     margin-top: 20%;
     margin-left: 5%;
+  }
+  .main_description{
+    text-align: center;
   }
 }
 @media (max-width: 650px) {

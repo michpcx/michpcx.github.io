@@ -11,11 +11,13 @@
         <meta name="author" content="Michal Pierzchalski">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/mainCSS.css" rel="stylesheet">
-        <link href="css/interestAnimation.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/typedAnimation.js"></script>
+
     </head>
     <body>
         <div class="main">
@@ -23,49 +25,35 @@
                     <div class="text_centre">
                       <div class="bio">
                         <div class="me_pic"></div>
-                        <div>
-                            <h1>Hi, I'm <span class="name" >Michal</span> Pierzchalski.</h1>
-                            <div class="rotating-text">
-                                <p class="main_description">I'm a student at University of Lincoln, with an interest in</p>
-                                <p class="interest-list">
-                                  <span class="word alizarin">programming.</span>
-                                  <span class="word wisteria">cyber&nbsp;security.</span>
-                                  <span class="word peter-river">travelling.</span>
-                                  <span class="word emerald">space&nbsp;exploration.</span>
-                                  <span class="word sun-flower">politics.</span>
-                                  <span class="word alizarin">video&nbsp;games.</span>
-                                  <span class="word wisteria">history.</span>
-                                  <span class="word peter-river">war&nbsp;strategy.</span>
-                                </p>
-                            </div>
-                        </div>
+                        <h1>Hi, I'm <span class="name" >Michal</span> Pierzchalski.</h1>
+                        <p class="main_description">I'm a student at University of Lincoln, with an interest in&nbsp;<span class="interest_list"></span></p>
                       </div>
 
-                        <div class="wrapper-button">
-                          <div class="svg-wrapper-button">
-                              <a href="mailto:michpcx@protonmail.com">
-                                <img class="main_icon" src="assets/main_icon1.png" />
-                              </a>
-                          </div>
-
-                          <div class="svg-wrapper-button">
-                            <a href="https://github.com/michpcx">
-                              <img class="main_icon" src="assets/main_icon2.png" />
+                      <div class="wrapper-button">
+                        <div class="svg-wrapper-button">
+                            <a href="mailto:michpcx@protonmail.com">
+                              <img class="main_icon" src="assets/main_icon1.png" />
                             </a>
-                          </div>
-
-                          <div class="svg-wrapper-button">
-                            <a href="https://www.linkedin.com/in/michal-pierzchalski/">
-                              <img class="main_icon" src="assets/main_icon3.png" />
-                            </a>
-                          </div>
-
-                          <div class="svg-wrapper-button">
-                            <a href="http://travel.pmichal.me/">
-                              <img class="main_icon" src="assets/main_icon4.png" />
-                            </a>
-                          </div>
                         </div>
+
+                        <div class="svg-wrapper-button">
+                          <a href="https://github.com/michpcx">
+                            <img class="main_icon" src="assets/main_icon2.png" />
+                          </a>
+                        </div>
+
+                        <div class="svg-wrapper-button">
+                          <a href="https://www.linkedin.com/in/michal-pierzchalski/">
+                            <img class="main_icon" src="assets/main_icon3.png" />
+                          </a>
+                        </div>
+
+                        <div class="svg-wrapper-button">
+                          <a href="http://travel.pmichal.me/">
+                            <img class="main_icon" src="assets/main_icon4.png" />
+                          </a>
+                        </div>
+                      </div>
 
                     </div>
                     <div class="scroll">
@@ -176,6 +164,7 @@
                   <h2>Current MTAs which I hold are;</h2>
                   <span>
                      <ul>
+                        <li>Security Fundamentals</li>
                         <li>Network Fundamentals</li>
                         <li>C# Software Development Fundamentals</li>
                         <li>Introduction to Programming Using Python</li>
