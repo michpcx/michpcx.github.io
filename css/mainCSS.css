@@ -352,6 +352,7 @@ a:hover{
   width:170px;
   height:170px;
   position: relative;
+  background: rgba(0, 0, 0, 0.20);
   margin-right: 20px;
 }
 .networkplus{
@@ -496,6 +497,8 @@ a:hover{
 .project-info li{
   margin: -12px 0;
 }
+
+
 .background-hms{
     background-image: url("../assets/hms.jpg");
 }
@@ -556,29 +559,6 @@ a:hover{
       font-size: 15pt;
       color: #D6D4D4;
       margin-bottom: 20px;
-  }
-}
-@media (max-width: 1000px){
-  .statistics{
-    height: auto;
-    overflow: auto;
-    display: grid;
-  }
-  .statistics .stat_box{
-    width:350px;
-    background: rgba(0, 0, 0, 0.40);
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .cert-wrapper{
-    display: grid;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .cert-item{
-    width:120px;
-    height:120px;
-    margin-top: 20px;
   }
 }
 @media (max-width: 850px) {
