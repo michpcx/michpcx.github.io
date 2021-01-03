@@ -173,12 +173,14 @@ a:hover{
 }
 .row{
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .gallery{
   margin-top: 100px;
   position: relative;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-40%);
+  width: 90%;
 }
 .portfolio .filtering span {
   padding: 8px 20px;
@@ -219,7 +221,7 @@ a:hover{
   color: #4583AD;
   font-size: 13px;
   position: relative;
-  margin-top: 70px;
+  margin-top: 50px;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   -webkit-transition: all .6s;
@@ -278,7 +280,7 @@ a:hover{
 
 /*            STATISTICS          */
 .statistics{
-  height: 300px;
+  height: 350px;
   background: url("../assets/stat_back.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;

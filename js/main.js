@@ -54,5 +54,94 @@ $( document ).ready(function() {
     });
 
 
+    var number1 = new counterUp({
+    // duration in milliseconds
+    duration: 1000,
+    // string to prepend to the value
+    prepend: '',
+    // string to apend to the value
+    append: '',
+    // selector used to find elements on wich applycountUp
+    selector: '#number_1',
+    // default start
+    start: 0,
+    // default end
+    end: 8,
+    // should we display integer values only
+    intvalues: true,
+    // default counting interval
+    interval: 100
+});
+
+    var number2 = new counterUp({
+    // duration in milliseconds
+    duration: 1000,
+    // string to prepend to the value
+    prepend: '',
+    // string to apend to the value
+    append: '',
+    // selector used to find elements on wich applycountUp
+    selector: '#number_2',
+    // default start
+    start: 0,
+    // default end
+    end: 11,
+    // should we display integer values only
+    intvalues: true,
+    // default counting interval
+    interval: 100
+});
+
+    var number3 = new counterUp({
+    // duration in milliseconds
+    duration: 1000,
+    // string to prepend to the value
+    prepend: '',
+    // string to apend to the value
+    append: '',
+    // selector used to find elements on wich applycountUp
+    selector: '#number_3',
+    // default start
+    start: 0,
+    // default end
+    end: 7,
+    // should we display integer values only
+    intvalues: true,
+    // default counting interval
+    interval: 100
+});
+
+    var number4 = new counterUp({
+    // duration in milliseconds
+    duration: 2300,
+    // string to prepend to the value
+    prepend: '',
+    // string to apend to the value
+    append: '',
+    // selector used to find elements on wich applycountUp
+    selector: '#number_4',
+    // default start
+    start: 0,
+    // default end
+    end: 26481,
+    // should we display integer values only
+    intvalues: true,
+    // default counting interval
+    interval: 20
+});
+
+
+    var start_counting = new Waypoint({
+      element: document.getElementsByClassName('stat_box'),
+      handler: function(direction) {
+        number1.start();
+        number2.start();
+        number3.start();
+        number4.start();
+      },
+  offset: '100%'
+    })
+
+
 
 });
