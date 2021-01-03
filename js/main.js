@@ -1,13 +1,41 @@
 $( document ).ready(function() {
 
-    // isotope
-    $('.gallery').isotope({
-      // options
-      itemSelector: '.items'
-    });
+    var strings = {
+      strings: ['programming.', 'cyber&nbsp;security.', 'travelling.', 'politics.', 'video&nbsp;games.', 'history.'],
+      typeSpeed: 100,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
 
+    var strings_pl = {
+      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'podróżowaniu.', 'polityce..', 'grach&nbsp;komputerowych.', 'historii.'],
+      typeSpeed: 100,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
+
+
+    if( $('.interest_list').length )
+    {
+
+    var typed = new Typed('.interest_list', strings);
+
+    } else if( $('.interest_list_pl').length )
+    {
+
+    var typed = new Typed('.interest_list_pl', strings_pl);
+
+    }
+
+
+    // isotope
     var $gallery = $('.gallery').isotope({
       // options
+      itemSelector: '.items'
     });
 
     // filter items on button click
@@ -27,64 +55,4 @@ $( document ).ready(function() {
 
 
 
-    function mainLoopPL(){
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("podróżowaniu."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("strategii wojennej."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("tworzeniu gier."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("politice."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("gier wideo."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("historii."); $(this).dequeue()})
-            .animate({opacity:1});
-        $("#listItemPL").delay(2000).animate({opacity:0}, 500)
-            .queue(function(){$(this).text("eksploracją kosmosu."); $(this).dequeue()})
-            .animate({opacity:1}, mainLoopPL);
-      }
-
-    var words = document.querySelectorAll(".word");
-    words.forEach(function (word) {
-    var letters = word.textContent.split("");
-    word.textContent = "";
-    letters.forEach(function (letter) {
-        var span = document.createElement("span");
-        span.textContent = letter;
-        span.className = "letter";
-        word.append(span);
-    });
-    });
-    var currentWordIndex = 0;
-    var maxWordIndex = words.length - 1;
-    words[currentWordIndex].style.opacity = "1";
-    var rotateText = function () {
-        var currentWord = words[currentWordIndex];
-        var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-        // rotate out letters of current word
-        Array.from(currentWord.children).forEach(function (letter, i) {
-            setTimeout(function () {
-                letter.className = "letter out";
-            }, i * 80);
-        });
-        // reveal and rotate in letters of next word
-        nextWord.style.opacity = "1";
-        Array.from(nextWord.children).forEach(function (letter, i) {
-            letter.className = "letter behind";
-            setTimeout(function () {
-                letter.className = "letter in";
-            }, 340 + i * 80);
-        });
-        currentWordIndex =
-            currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-    };
-    rotateText();
-    setInterval(rotateText, 4000);
 });

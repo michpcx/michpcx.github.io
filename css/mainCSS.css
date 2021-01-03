@@ -25,7 +25,6 @@ li {
 .text_centre{
     position: relative;
     top: 30%;
-    /*left: 50%;*/
     text-align: center;
     width: 100%;
     font-family: 'Louis George Cafe', serif;
@@ -146,13 +145,14 @@ a:hover{
   width: 100%;
   background-color: #0E0E0E;
   text-align: center;
+  overflow: hidden;
 }
 .portfolio h2{
   font-size: 30pt;
   font-family: 'Louis George Cafe', sans-serif;
   color: #D6D4D4;
   padding-top: 60px;
-    position: relative;
+  position: relative;
 }
 .portfolio h2:after {
   content: '';
@@ -176,6 +176,9 @@ a:hover{
 }
 .gallery{
   margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-45%);
 }
 .portfolio .filtering span {
   padding: 8px 20px;
@@ -209,19 +212,21 @@ a:hover{
   transition: all .6s;
   opacity: 0;
   z-index: 5;
-  color: #ffffff;
+  color: #e2e2e2;
+  font-family: 'Louis George Cafe', sans-serif;
 }
 .portfolio .item-img h6 {
   color: #4583AD;
   font-size: 13px;
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 70px;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   -webkit-transition: all .6s;
   transition: all .6s;
   opacity: 0;
   z-index: 5;
+  font-family: 'Louis George Cafe', sans-serif;
 }
 .portfolio .item-img .link {
   position: absolute;
@@ -250,7 +255,7 @@ a:hover{
   background: #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
-  background: #999999
+  background: #24272a; /*#303741*/
 }
 .portfolio .item-img-overlay:before {
   left: 0;
@@ -268,6 +273,48 @@ a:hover{
           transform: translateY(0);
   opacity: 1;
 }
+
+
+
+/*            STATISTICS          */
+.statistics{
+  height: 300px;
+  background: url("../assets/stat_back.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statistics .stat_box{
+  text-align:center;
+  /*border: 1px solid white;*/
+  width:300px;
+  height:200px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.20);
+  margin-right: 20px;
+}
+.statistics h4{
+  margin-top: 0px;
+  color: white;
+  font-family: 'Louis George Cafe', sans-serif;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  position: absolute;
+}
+.number{
+  color: white;
+  font-family: 'Louis George Cafe', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+}
+
+
 
 
 
