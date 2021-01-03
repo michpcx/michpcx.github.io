@@ -581,7 +581,7 @@ a:hover{
     margin-top: 20px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   .progress-container {
   	position: relative;
   	top: 0px;
@@ -591,6 +591,11 @@ a:hover{
   }
   .wrapper-button {
     margin-top: 15%;
+  }
+  .gallery{
+    left: 0%;
+    transform: translateX(0%);
+    width: 100%;
   }
 }
 @media (max-width: 650px) {
