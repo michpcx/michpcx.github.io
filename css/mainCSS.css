@@ -133,7 +133,6 @@ a:hover{
   border-radius: 50%;
 }
 .bio{
-  /*display:flex;*/
   align-items:center;
 }
 
@@ -230,16 +229,6 @@ a:hover{
   z-index: 5;
   font-family: 'Louis George Cafe', sans-serif;
 }
-.portfolio .item-img .link {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: #4583AD;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  z-index: 5;
-  opacity: 0;
-}
 .portfolio .item-img-overlay {
   position: absolute;
   top: 5px;
@@ -316,6 +305,96 @@ a:hover{
   padding-top: 20px;
 }
 
+
+
+/*            CERTIFICATIONS           */
+.certs{
+  width: 100%;
+  background-color: #0E0E0E;
+  text-align: center;
+  overflow: hidden;
+}
+.certs h2{
+  font-size: 30pt;
+  font-family: 'Louis George Cafe', sans-serif;
+  color: #D6D4D4;
+  padding-top: 60px;
+  position: relative;
+}
+.certs h2:after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: #4583AD;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 40px);
+}
+.certs h2:before {
+  content: '';
+  width: 200px;
+  height: 1px;
+  background: #353535;
+  position: absolute;
+  bottom: -10px;
+}
+.cert-wrapper{
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cert-item{
+  text-align:center;
+  width:170px;
+  height:170px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.20);
+  margin-right: 20px;
+}
+.networkplus{
+  background: url("../assets/certs/networkplus.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.securityplus{
+  background: url("../assets/certs/securityplus.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.azurefunda{
+  background: url("../assets/certs/azurefunda.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mtapython{
+  background: url("../assets/certs/mtapython.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mtasoftware{
+  background: url("../assets/certs/mtasoftware.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mtanetworking{
+  background: url("../assets/certs/mtanetworking.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mtajs{
+  background: url("../assets/certs/mtajs.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mtasecurity{
+  background: url("../assets/certs/mtasecurity.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
