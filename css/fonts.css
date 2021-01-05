@@ -74,3 +74,7 @@
   font-family: 'Louis George Cafe';
   src: url(../assets/LouisGeorgeCafe.ttf);
 }
+@font-face {
+  font-family: 'SinkinSans';
+  src: url(../assets/SinkinSans.ttf);
+}

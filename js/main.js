@@ -139,9 +139,20 @@ $( document ).ready(function() {
         number3.start();
         number4.start();
       },
-  offset: '100%'
-    })
+      offset: '100%'
+    });
 
+    var progress = new Waypoint({
+      element: document.getElementsByClassName('edu'),
+      handler: function(direction) {
+        $('.progress-percent').each(function(){
+            var $this = $(this);
+            var percent = $this.attr('percent');
+            $this.css("width",percent+'%');
+        });
+      },
+      offset: '100%'
+    });
 
 
 });
