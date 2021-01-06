@@ -14,9 +14,12 @@
         <link href="css/fonts.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+        <script src="js/countUp.js"></script>
         <script src="js/main.js"></script>
         <script src="js/typed.js"></script>
-        <script src="js/typedAnimation.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/waypoint.js"></script>
     </head>
     <body>
         <div class="main">
@@ -65,208 +68,256 @@
                     </div>
             </div>
 
-            <div class="project-section">
 
-	      <div class="project-section">
-              <div class="project">
-                 <div class="project-preview">
-                   <div class="spot cour"><h6>Szkoła letnia</h6></div>
-                   <h2>Universitet w Rostoku</h2>
+            <div class="portfolio">
+               <h2>Moje portfolio</h2>
+
+               <div class="row">
+
+                 <!-- filter links -->
+                 <div class="filtering">
+                   <span data-filter="*" class="active">Wszystko</span>
+                   <span data-filter=".projects">Projekty</span>
+                   <span data-filter=".game">Gry wideo</span>
                  </div>
-                 <div class="project-info">
-                   <h2>Bezpieczeństwo Internetu rzeczy i kontrolerów przemysłowych</h2>
-                   <span>Latem tego roku brałem udział w szkole letniej w Niemczech. Tam się nauczyłem o tym, jak zabezpieczać urządzenia IoT, a także jak przeprowadzać testy penetracyjne na kontrolerach przemysłowych.</span>
+
+                 <!-- gallery -->
+                 <div class="gallery">
+
+                   <!-- gallery item -->
+                   <div class="items game" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/lastresort.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Last Resort - gra platformowa oparta o historii Chernobyla.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/hotspot.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Inżynierstwo oprogramowania</h6>
+                           <h5>Aplikacja mobilna przeznaczona do pomocy potrzebującym poprzez porównywanie cen artykułów spożywczych z różnych supermarketów.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/cloud_azure.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Chmóra</h6>
+                           <h5>Fully functioning IoT system designed to keep track of all the temperatures in the weather stations.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/cloud.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Chmóra</h6>
+                           <h5>W pełni działający system wykorzystujący Infrastrukturę jako Kod dla firmy zarządzającej autostradami w GCP.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items game">
+                     <div class="item-img">
+                       <img src="assets/portfolio/backhome.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Back Home - Gra zrobiona w 48 godzin, w której stajesz się człowiekiem bezdomnym próbującym dotrzeć do swojej rodziny.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+
+                   <!-- gallery item -->
+                   <div class="items game" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/uprising1944.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Uprising 1944 - Gra 2D, w której wcielasz się w rolę polskiego żołnierza podczas Powstania Warszawskiego.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/richy.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Inżynierstwo oprogramowania</h6>
+                           <h5>Richy - Osobisty asystent w pełni wykorzystujący Python-a w linii poleceń.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/hms.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Inżynierstwo oprogramowania</h6>
+                           <h5>Oprogramowanie do zarządzania hotelami - pełny system zarządzania razem z bazą danych przeznaczony dla małych i średnich sieci Hoteli i Hosteli.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/police.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Competition</h6>
+                           <h5>HTP3L - System zaprojektowany dla Policji Lincolnshire w celu pomocy w odnalezieniu zaginionych osób z pomocą społeczeństwa.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/adidas.JPG" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Web Project</h6>
+                           <h5>Adidas - Projekt uniwersytecki, w którym stworzyłem pełnowartościową stronę internetową dla Adidasa wraz z funkcjonalnością sklepu i customizera.</h5>
+                       </div>
+                     </div>
+                   </div>
+
                  </div>
                </div>
+            </div>
+
+            <div class="statistics">
+              <div class="stat_box">
+                <span class="number" id="number_1"> 8 </span>
+                <h4>Certyfikaty zdobyte</h4>
+              </div>
+              <div class="stat_box">
+                <span class="number" id="number_2"> 11 </span>
+                <h4>Ukończone projekty</h4>
+              </div>
+              <div class="stat_box">
+                <span class="number" id="number_3"> 7 </span>
+                <h4>Używane języki programowania</h4>
+              </div>
+              <div class="stat_box">
+                <span class="number" id="number_4"> 26481 </span>
+                <h4>Linie kodu</h4>
+              </div>
+            </div>
 
 
-	              <div class="project">
-                <div class="project-preview">
-                  <div class="spot cert"><h6>Certifikat</h6></div>
-                  <h2>CompTIA</h2>
+            <div class="certs">
+               <h2>Certifikacje</h2>
+
+               <div class="cert-wrapper">
+                  <div class="cert-item networkplus"></div>
+                  <div class="cert-item securityplus"></div>
+               </div>
+
+               <div class="cert-wrapper">
+                  <div class="cert-item azurefunda"></div>
+               </div>
+
+               <div class="cert-wrapper">
+                  <div class="cert-item mtapython"></div>
+                  <div class="cert-item mtanetworking"></div>
+                  <div class="cert-item mtasecurity"></div>
+                  <div class="cert-item mtajs"></div>
+                  <div class="cert-item mtasoftware"></div>
+               </div>
+
+            </div>
+
+            <div class="edu">
+              <div class="info-box">
+                <div>
+                    <h3>Edukacja</h3>
                 </div>
-                <div class="project-info">
-                  <h2>Obecne posiadane przeze mnie certyfikaty CompTIA;</h2>
-                  <span>
-                       <ul>
-                           <li>Network+ (N10-007)</li>
-                           <li>Security+ (SY0-501)</li>
-                       </ul>
-                  </span>
+                <div>
+                    <h4>University of Lincoln</h4>
+                    <h5>Informatyka</h5>
+                </div>
+                <div>
+                    <h4>University of Rostock</h4>
+                    <h5>Bezpieczeństwo Internetu przedmiotów i kontrolerów przemysłowych</h5>
+                </div>
+                <div>
+                    <h4>KDU University College</h4>
+                    <h5>Wymiana studencka</h5>
                 </div>
               </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot cert"><h6>Certifikacja</h6></div>
-                  <h2>Microsoft Technical Certification (MTC)</h2>
+              <div class="info-box extra-space">
+                <div>
+                    <h3>Doświadczenie</h3>
                 </div>
-                <div class="project-info">
-                  <h2>AZ-900: Microsoft Azure Fundamentals</h2>
-                  <span>Podczas wiosny 2020, przesłem Microsoft Technical Certification w Azure Fundamentals.</span>
+                <div>
+                    <h4>Cyber Analyst</h4>
+                    <h5>KryptoKloud</h5>
                 </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot work"><h6>Praca</h6></div>
-                  <h2>Biuro Global Opportunities w University Of Lincoln</h2>
+                <div>
+                    <h4>Cyber Analityk</h4>
+                    <h5>University of Lincoln</h5>
                 </div>
-            		<div class="project-info">
-            			<h2>Ambasador do Global Opportunities</h2>
-                  <span>Podczas drugiego roku w uniwersytecie, zostałem ambasadorem biura "Global Opportunities" które pozwala wysyłać studentów za granice ale również brać studentów z zagranicy do Anglii. </span>
-            		</div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot inte"><h6>Praktyki</h6></div>
-                  <h2>Bright Network</h2>
+                <div>
+                    <h4>Lider projektu - Inżynieria oprogramowania</h4>
+                    <h5>University of Lincoln</h5>
                 </div>
-                <div class="project-info">
-                  <h2>Praktykant Technologi</h2>
-                  <span> W lacie 2020 dołączyłem Bright Network na krótkie, wirtualne praktyki o planowaniu projektów i ogólnie o technologi. Ja dostałem zadanie zaprojektować proces wydawczy dla funkcij werifikatycznej dla apki bankowej. Podczas tych praktyk, brałem udział w kilku prezentacjach z wielkich firm jak Google i Amazon.</span>
+                <div>
+                    <h4>Ambassador do Global Opportunities</h4>
+                    <h5>University of Lincoln</h5>
                 </div>
               </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot exch"><h6>Wymiana studencka</h6></div>
-                  <h2>Program Wymiany Studenckiej</h2>
+              <div class="info-box-skills">
+                <div>
+                    <h3>Umiejętności</h3>
                 </div>
-                <div class="project-info background-malay">
-                  <h2>Penang, Malezja</h2>
-                  <span>W czerwcu 2019 zostałem wybrany jako nieliczny z dużej grópy aplikantów żeby doświadczyć wymiane studencką z KDU University w Malezij. Spędziłem dwa tygodnie na zapoznawaniu się z kulturą Malezji oraz odwiedzaniu wiodących w branży firm. </span>
-                  <a href="https://travel.pmichal.me/countries/malaysia.html"><button class="btn">Visit</button></a>
+                <div class="progress">
+                    <h4>Chmóra</h4>
+                    <div class="progress-bar">
+                        <div class="progress-percent" percent="65"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <h4>Cyber</h4>
+                    <div class="progress-bar">
+                        <div class="progress-percent" percent="85"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <h4>Programowanie</h4>
+                    <div class="progress-bar">
+                        <div class="progress-percent" percent="80"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <h4>Projektowanie gier</h4>
+                    <div class="progress-bar">
+                        <div class="progress-percent" percent="60"></div>
+                    </div>
                 </div>
               </div>
+            </div>
 
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot vol"><h6>Wolontariat</h6></div>
-                  <h2>CES - Cultural Exchange Sessions</h2>
-                </div>
-                <div class="project-info">
-                  <h2>Nauczyciel Języka Polskiego</h2>
-                  <span>W drugim roku uniwersytetu, zaczołem wolontariat dla wymiany językowej i zostałęm nauczycielem języka Polskiego. Moim zadaniem było przygotowanie i prezentowanie Polskich prezentacji oraz różnie inne zadanie które pomagały uczyć się studentom języka Polskiego.</span>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot cert"><h6>Certifikacja</h6></div>
-                  <h2>Microsoft Technology Associate (MTA)</h2>
-                </div>
-                <div class="project-info">
-                  <h2>MTA które posiadam;</h2>
-                  <span>
-                    <ul>
-                       <li>Network Fundamentals</li>
-                       <li>C# Software Development Fundamentals</li>
-                       <li>Introduction to Programming Using Python</li>
-                       <li>Introduction to Programming Using JavaScript</li>
-                     </ul>
-                  </span>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot proj"><h6>Projekt</h6></div>
-                  <h2>Team Software Engineering</h2>
-                </div>
-                <div class="project-info">
-                  <div class="progress-container">
-                    <div class="progress-100"></div>
-                    <span class="progress-text">
-                      100%/100% finished
-                    </span>
-                  </div>
-                  <h2>Project Leader</h2>
-                  <span>Podczas drugiego roku w uniwersytecie, wziąłem udział w rocznym projektcie w którym musieliśmy zbudować jaką aplikację. Ja odrazu się zgodziłem na bycie szefem projektu. To pomogło my ulepszyć umiejętności kierownicze i miałem pewność że aplikacja będzie skończona na czas.</span>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot proj"><h6>Projekt</h6></div>
-                  <h2>Web Authoring</h2>
-                </div>
-                <div class="project-info background-adidas">
-                  <h2>Projekt Adidas</h2>
-                  <span>Jedno z pierwszych zadań jakie dostałem podczas moich studiów w Informatyce było stworzenie strony dla wybranej marki. Ja stworzyłem stronę dla Adidasa razem z sklepem, koszykiem i personalnym dostosowaniem butów.</span>
-                  <a href="https://pmichal.me/adidasProject/"><button class="btn">Visit</button></a>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot cour"><h6>Kurs</h6></div>
-                  <h2>National Security Agency (NSA)</h2>
-                </div>
-                <div class="project-info">
-                  <h2>Kurs Python-a</h2>
-                  <span>Na początku 2020, wziąłem udział w kursie Python-a który był uczony przez Policje. Materiały które używaliśmy były originale slajdy które nadal są używane przez NSA do szkolenia nowych agentów.</span>
-                </div>
-              </div>
-
-              <div class="project">
-            		<div class="project-preview">
-            			<div class="spot comp"><h6>Game Jam</h6></div>
-            			<h2>Game Jam-y 2019/2020</h2>
-            		</div>
-            		<div class="project-info background-upris">
-            			<h2>"Best use of a theme" nagroda</h2>
-                  <span>Przez ostatnie kilka lat, wziołem udział w kilku Game Jam-ów wliczając dwa globalne w których ludzie z całego świata tworzą gry na jeden temat przez 48 godziny. W każdym Game Jam-ie w którym wiołem udział dostałem "Best use of a theme" nagrode za wybór wspaniałych i wyjątkowych histori na których moje gry są oparte. </span>
-                  <a href="https://pmichal.me/games.html"><button class="btn">Visit</button></a>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot comp"><h6>Kompetycja</h6></div>
-                  <h2>Lincolnshire Police HQ</h2>
-                </div>
-                <div class="project-info">
-                  <h2>Hack The Police Challange</h2>
-                  <span>W roku 2018 wiąłem udział w kompetycij Hack The Police. Ja i mój zespół stworzyliśmy oprogramowanie które pomoże policij znaleść osoby zaginione przez pomoc od osób postronnych.</span>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot proj"><h6>Projekt</h6></div>
-                  <h2>Python</h2>
-                </div>
-                <div class="project-info background-richy">
-                  <h2>Richy - Osobisty asystant</h2>
-                  <span>W wolnym czasie stworzyłem własnego asystenta który jest w pełni oparty na konsoli i został stworzony w języku Python.</span>
-                  <a href="https://github.com/michpcx/Richy"><button class="btn">Visit</button></a>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot proj"><h6>Project</h6></div>
-                  <h2>Visual Basic</h2>
-                </div>
-                <div class="project-info background-hms">
-                  <h2>Oprogramowanie do zarządzania hotelami</h2>
-                  <span>Na potrzeby A levels w Informatyce, stworzyłem w pełni sprawne oprogramowanie dla hoteli które ma pomoc pracownikom zarządzać małym hotelem.</span>
-                </div>
-              </div>
-
-              <div class="project">
-                <div class="project-preview">
-                  <div class="spot awa"><h6>Nagroda</h6></div>
-                  <h2>Najbardziej Efektywny Użytkownik ICT</h2>
-                </div>
-                <div class="project-info">
-                  <h2>Najbardziej Efektywny Użytkownik ICT</h2>
-                  <span>Podczas moich GCSE's dostałem nagrodę za Najbardziej efektywnego użytkownika ICT z całej szkoły za moje doskonałe umiejętności i wiedzę z zakresu informatyki.</span>
-                </div>
-              </div>
-          	</div>
+            <footer>
+               <p>Stworzone przez <a href="https://pmichal.me" >Michała P</a> © 2021</p>
+            </footer>
         </div>
       </body>
 </html>
