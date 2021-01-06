@@ -533,132 +533,11 @@ footer p a:hover{
 }
 
 
-/*            PROJECT             */
-.project-section {
-  align-items: center;
-	justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.project {
-	background-color: #d7e3f4;
-	border-radius: 10px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	display: flex;
-	margin: 20px;
-  margin-bottom: 5px;
-	overflow: hidden;
-	width: 70%;
-  height: 200px;
-  box-sizing: border-box;
-  font-family: 'Louis George Cafe', serif;
-}
-.project h6 {
-	opacity: 0.6;
-	margin: 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-  margin-left: 15px;
-}
-
-.project h2 {
-	letter-spacing: 1px;
-	margin: 10px 0;
-}
-.project-preview {
-	background-color: #8faeef;
-	color: #fff;
-	padding: 30px;
-	max-width: 250px;
-  min-width: 250px;
-}
-.project-info {
-	padding: 30px;
-	position: relative;
-	width: 100%;
-  background-position: center;
-  background-color: hsla(215.2,56.9%,90%,0.80);
-  background-blend-mode: overlay;
-}
-
-.progress-container {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	text-align: right;
-	width: 150px;
-}
-
-.progress-100 {
-	background-color: #ddd;
-	border-radius: 3px;
-	height: 5px;
-	width: 100%;
-}
-
-.progress-100::after {
-	border-radius: 3px;
-	background-color: #8faeef;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 5px;
-	width: 100%;
-}
-
-.progress-text {
-	font-size: 10px;
-	opacity: 0.6;
-	letter-spacing: 1px;
-}
-.btn {
-	background-color: #8faeef;
-	border: 0;
-	border-radius: 4px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	color: #fff;
-	font-size: 16px;
-	padding: 12px 25px;
-	position: absolute;
-	bottom: 30px;
-	right: 30px;
-  cursor: pointer;
-	letter-spacing: 1px;
-}
-.project-info li{
-  margin: -12px 0;
-}
-.background-hms{
-    background-image: url("../assets/hms.jpg");
-}
-.background-richy{
-    background-image: url("../assets/richy.jpg");
-}
-.background-backH{
-  background-image: url("../assets/backhome.jpg");
-}
-.background-upris{
-  background-image: url("../assets/uprising1944.jpg");
-}
-.background-adidas{
-  background-image: url("../assets/adidas.jpg");
-}
-.background-malay{
-  background-image: url("../assets/malaysia.jpg");
-}
-
 
 
 
 
 @media (max-width: 1160px) {
-  .project{
-      height: 270px;
-      width: 90%;
-  }
   .scroll{
       bottom: 20px;
       font-size: 17px;
@@ -677,9 +556,6 @@ footer p a:hover{
     width: 95px;
     height: 95px;
     border: 6px solid black;
-  }
-  .wrapper-button {
-    margin-top: 0px;
   }
   .text_centre h1{
       font-size: 42pt;
@@ -715,52 +591,44 @@ footer p a:hover{
     height:120px;
     margin-top: 20px;
   }
+  .edu{
+    height: auto;
+    overflow: auto;
+    display: grid;
+  }
+  .edu .info-box{
+    width:500px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.40);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .edu .info-box-skills{
+    width:500px;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  .info-box h4 {
+    font-size: 25px;
+  }
+  .info-box h5 {
+    font-size: 15px;
+  }
+  .edu h3:after {
+    left: calc(25%);
+  }
+  .edu .info-box-skills h3:after {
+    left: calc(25%);
+  }
+  .edu .info-box-skills h3:before {
+    width: 180px;
+    left: calc(37%);
+  }
 }
 @media (max-width: 880px) {
-  .progress-container {
-  	position: relative;
-  	top: 0px;
-  	right: 0px;
-  	text-align: center;
-  	width: 150px;
-  }
-  .wrapper-button {
-    margin-top: 15%;
-  }
   .gallery{
     left: 0%;
     transform: translateX(0%);
     width: 100%;
-  }
-}
-@media (max-width: 650px) {
-  .project {
-    width: 98%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .project h2 {
-  	letter-spacing: 1px;
-  	margin: 10px 0;
-    font-size: 20px;
-  }
-  .project span {
-    font-size: 11.5px;
-  }
-  .project-preview {
-    max-width: 100px;
-    min-width: 100px;
-    padding: 15px;
-  }
-  .project-info {
-    padding: 10px;
-  }
-  .btn {
-    border-radius: 0px;
-    font-size: 20px;
-    bottom: 0px;
-    right: 0%;
-    width: 100%;
-    background-color: #85a0db;
   }
 }
