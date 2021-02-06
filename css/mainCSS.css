@@ -49,6 +49,8 @@ li {
   background-size: cover;
   width: 70px;
   height: 50px;
+  animation: updown 3s ease infinite;
+  cursor: pointer;
 }
 .flag-side{
   position: absolute;
@@ -134,6 +136,19 @@ a:hover{
 }
 .bio{
   align-items:center;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(-30%);
+  }
 }
 
 

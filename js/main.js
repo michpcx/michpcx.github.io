@@ -154,5 +154,9 @@ $( document ).ready(function() {
       offset: '100%'
     });
 
+    $('.scroll').click(function(event) {
+      $('html, body').animate({ scrollTop: $(this).offset().top+85 }, 550);
+    })
+
 
 });
