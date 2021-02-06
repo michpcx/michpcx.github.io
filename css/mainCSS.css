@@ -178,8 +178,8 @@ a:hover{
   margin-top: 100px;
   position: relative;
   left: 50%;
-  transform: translateX(-40%);
-  width: 90%;
+  transform: translateX(-45%);
+  width: 80%;
 }
 .portfolio .filtering span {
   padding: 8px 20px;
