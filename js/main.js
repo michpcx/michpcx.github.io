@@ -66,7 +66,7 @@ $( document ).ready(function() {
     // default start
     start: 0,
     // default end
-    end: 8,
+    end: 10,
     // should we display integer values only
     intvalues: true,
     // default counting interval
