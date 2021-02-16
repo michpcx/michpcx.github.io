@@ -415,6 +415,11 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.azuredata{
+  background: url("../assets/certs/azuredata.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /*            EDUCATION           */
