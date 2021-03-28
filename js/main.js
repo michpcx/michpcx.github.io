@@ -113,7 +113,7 @@ $( document ).ready(function() {
 
     var number4 = new counterUp({
     // duration in milliseconds
-    duration: 2300,
+    duration: 800,
     // string to prepend to the value
     prepend: '',
     // string to apend to the value
@@ -123,7 +123,7 @@ $( document ).ready(function() {
     // default start
     start: 0,
     // default end
-    end: 26481,
+    end: 3,
     // should we display integer values only
     intvalues: true,
     // default counting interval
