@@ -568,4 +568,26 @@ footer p a:hover{
     transform: translateX(0%);
     width: 100%;
   }
+  .text_centre h1{
+      font-size: 30pt;
+      margin-bottom: 0px;
+  }
+  .text_centre p{
+      font-size: 14pt;
+      margin-bottom: 5px;
+  }
+  .wrapper-button {
+    display: inline;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .svg-wrapper-button{
+    float: left;
+    margin-bottom: 15px;
+  }
 }
