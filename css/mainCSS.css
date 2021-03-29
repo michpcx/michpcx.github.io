@@ -43,8 +43,7 @@ li {
 .scroll{
   position: absolute;
   bottom: 30px;
-  left: 50%;
-  transform: translate(-50%);
+  left: calc(50% - 35px);
   background-image: url("../assets/arrow.png");
   background-size: cover;
   width: 70px;
@@ -424,7 +423,7 @@ a:hover{
 
 /*            EDUCATION           */
 .edu{
-  height: 375px;
+  height: 300px;
   background: url("../assets/edu_back.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,7 +435,6 @@ a:hover{
 }
 .edu .info-box{
   text-align:center;
-  display: flex;
   justify-content: center;
   align-items: center;
   width:40%;
@@ -461,9 +459,11 @@ a:hover{
   font-size: 30px;
   font-family: 'Louis George Cafe', sans-serif;
   color: #D6D4D4;
-  position: relative;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+.info{
+  margin-top: 10%;
 }
 
 
