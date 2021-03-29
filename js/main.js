@@ -158,5 +158,9 @@ $( document ).ready(function() {
       $('html, body').animate({ scrollTop: $(this).offset().top+85 }, 550);
     })
 
+    $('.scroll2').click(function(event) {
+      $('html, body').animate({ scrollTop: $(this).offset().top+50 }, 550);
+    })
+
 
 });
