@@ -552,37 +552,14 @@ footer p a:hover{
     margin-top: 20px;
   }
   .edu{
-    height: auto;
-    overflow: auto;
-    display: grid;
+    height: 250px;
   }
   .edu .info-box{
-    width:500px;
-    height: 450px;
+    width:70%;
+    height: 80%;
     background: rgba(0, 0, 0, 0.40);
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-  .edu .info-box-skills{
-    width:500px;
-    height: 350px;
-    margin-bottom: 30px;
-  }
-  .info-box h4 {
-    font-size: 25px;
-  }
-  .info-box h5 {
-    font-size: 15px;
-  }
-  .edu h3:after {
-    left: calc(25%);
-  }
-  .edu .info-box-skills h3:after {
-    left: calc(25%);
-  }
-  .edu .info-box-skills h3:before {
-    width: 180px;
-    left: calc(37%);
   }
 }
 @media (max-width: 880px) {
