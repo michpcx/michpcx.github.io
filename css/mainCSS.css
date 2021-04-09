@@ -419,6 +419,11 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.azureai{
+  background: url("../assets/certs/azureai.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /*            EDUCATION           */
