@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
     var strings = {
-      strings: ['programming.', 'cyber&nbsp;security.', 'travelling.', 'politics.', 'video&nbsp;games.', 'history.'],
+      strings: ['programming.', 'cyber&nbsp;security.', 'skydiving.', 'travelling.', 'politics.', 'history.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
@@ -10,7 +10,7 @@ $( document ).ready(function() {
     };
 
     var strings_pl = {
-      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'podróżowaniu.', 'polityce..', 'grach&nbsp;komputerowych.', 'historii.'],
+      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'spadochroniarstwu.', 'podróżowaniu.', 'polityce..', 'historii.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
