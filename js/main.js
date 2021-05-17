@@ -18,6 +18,15 @@ $( document ).ready(function() {
       backSpeed: 50
     };
 
+    var business_list_strings_de = {
+      strings: ['cloud-anwendung', 'webseiten', 'mobile applikation'],
+      typeSpeed: 75,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
+
     var interst_list_strings = {
       strings: ['programming.', 'cyber&nbsp;security.', 'skydiving.', 'travelling.', 'politics.', 'history.'],
       typeSpeed: 100,
@@ -28,7 +37,16 @@ $( document ).ready(function() {
     };
 
     var interst_list_strings_pl = {
-      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'spadochroniarstwu.', 'podróżowaniu.', 'polityce..', 'historii.'],
+      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'spadochroniarstwu.', 'podróżowaniu.', 'polityce.', 'historii.'],
+      typeSpeed: 100,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
+
+    var interst_list_strings_de = {
+      strings: ['programmierung.', 'cybersicherheit.', 'fallschirmspringen.', 'reisen.', 'politik.', 'geschichte.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
@@ -43,7 +61,9 @@ $( document ).ready(function() {
     } else if( $('.interest_list_pl').length )
     {
     var typed = new Typed('.interest_list_pl', interst_list_strings_pl);
-    }
+  } else if( $('.interest_list_de').length ){
+    var typed = new Typed('.interest_list_de', interst_list_strings_de);
+  }
 
     if( $('.business_list').length )
     {
@@ -51,7 +71,9 @@ $( document ).ready(function() {
   } else if( $('.business_list_pl').length )
     {
     var typed = new Typed('.business_list_pl', business_list_strings_pl);
-    }
+  }else if( $('.business_list_de').length ){
+    var typed = new Typed('.business_list_de', business_list_strings_de);
+  }
 
 
     // isotope
@@ -88,7 +110,7 @@ $( document ).ready(function() {
     // default start
     start: 0,
     // default end
-    end: 10,
+    end: 11,
     // should we display integer values only
     intvalues: true,
     // default counting interval
@@ -107,7 +129,7 @@ $( document ).ready(function() {
     // default start
     start: 0,
     // default end
-    end: 11,
+    end: 12,
     // should we display integer values only
     intvalues: true,
     // default counting interval
@@ -126,7 +148,7 @@ $( document ).ready(function() {
     // default start
     start: 0,
     // default end
-    end: 7,
+    end: 8,
     // should we display integer values only
     intvalues: true,
     // default counting interval
