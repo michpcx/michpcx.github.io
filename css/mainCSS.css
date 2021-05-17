@@ -364,8 +364,8 @@ a:hover{
 }
 .cert-item{
   text-align:center;
-  width:170px;
-  height:170px;
+  width:140px;
+  height:140px;
   position: relative;
   margin-right: 20px;
 }
@@ -453,7 +453,7 @@ a:hover{
   -o-transition: 0.25s all ease-in-out;<br>
   transition: 0.25s all ease-in-out;
 }
-.edu .info-box:hover{
+.edu .info-box:hover, .statistics .stat_box:hover{
   background: rgba(0, 0, 0, 0.60);
   -webkit-transition: 0.25s all ease-in-out;
   -moz-transition: 0.25s all ease-in-out;

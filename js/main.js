@@ -1,6 +1,24 @@
 $( document ).ready(function() {
 
-    var strings = {
+    var business_list_strings = {
+      strings: ['cloud', 'web', 'mobile app'],
+      typeSpeed: 150,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
+
+    var business_list_strings_pl = {
+      strings: ['aplikacji w chmurze ', 'strony web', 'aplikacji mobilnej'],
+      typeSpeed: 75,
+      backDelay: 1500,
+      loop: true,
+      startDelay: 200,
+      backSpeed: 50
+    };
+
+    var interst_list_strings = {
       strings: ['programming.', 'cyber&nbsp;security.', 'travelling.', 'politics.', 'video&nbsp;games.', 'history.'],
       typeSpeed: 100,
       backDelay: 1500,
@@ -9,7 +27,7 @@ $( document ).ready(function() {
       backSpeed: 50
     };
 
-    var strings_pl = {
+    var interst_list_strings_pl = {
       strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'podróżowaniu.', 'polityce..', 'grach&nbsp;komputerowych.', 'historii.'],
       typeSpeed: 100,
       backDelay: 1500,
@@ -21,14 +39,18 @@ $( document ).ready(function() {
 
     if( $('.interest_list').length )
     {
-
-    var typed = new Typed('.interest_list', strings);
-
+    var typed = new Typed('.interest_list', interst_list_strings);
     } else if( $('.interest_list_pl').length )
     {
+    var typed = new Typed('.interest_list_pl', interst_list_strings_pl);
+    }
 
-    var typed = new Typed('.interest_list_pl', strings_pl);
-
+    if( $('.business_list').length )
+    {
+    var typed = new Typed('.business_list', business_list_strings);
+  } else if( $('.business_list_pl').length )
+    {
+    var typed = new Typed('.business_list_pl', business_list_strings_pl);
     }
 
 
