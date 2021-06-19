@@ -198,17 +198,20 @@ a:hover{
 .portfolio .filtering span {
   padding: 8px 20px;
   margin: 0 5px;
-  color: #777;
+  color: #a8a2a2;
   letter-spacing: 1px;
   font-size: 13px;
   cursor: pointer;
   border: 1px solid #eee;
   font-family: 'Louis George Cafe', sans-serif;
 }
+.search_category {
+  background: #111f29;
+}
 .portfolio .filtering .active {
   color: #fff;
   background: #4583AD;
-  border: 2px solid #4583AD;;
+  border: 2px solid #4583AD;
 }
 .portfolio .items {
   padding: 0 15px;
@@ -289,28 +292,34 @@ a:hover{
   background-size: cover;
   overflow: auto;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+}
+.colour-overlay{
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+  background: rgba(8, 13, 34, 0.4);
+  color: white;
 }
 .statistics .stat_box{
   text-align:center;
   /*border: 1px solid white;*/
   width:300px;
   height:200px;
-  position: relative;
+  display:inline-block;
   background: rgba(0, 0, 0, 0.20);
   margin-right: 20px;
+  margin-top: 70px;
 }
 .statistics h4{
-  margin-top: 0px;
+  margin-top: 25px;
   color: white;
   font-family: 'Louis George Cafe', sans-serif;
   font-size: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-  position: absolute;
 }
 .number{
   color: white;
@@ -428,7 +437,7 @@ a:hover{
 
 /*            EDUCATION           */
 .edu{
-  height: 300px;
+  height: 200px;
   background: url("../assets/edu_back.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,15 +451,14 @@ a:hover{
   text-align:center;
   justify-content: center;
   align-items: center;
-  width:40%;
-  height:85%;
+  width:100%;
+  height:100%;
   position: relative;
-  background: rgba(0, 0, 0, 0.40);
-  margin-right: 20px;
+  background: rgba(8, 13, 34, 0.4);
   color: white;
   -webkit-transition: 0.25s all ease-in-out;
   -moz-transition: 0.25s all ease-in-out;
-  -o-transition: 0.25s all ease-in-out;<br>
+  -o-transition: 0.25s all ease-in-out;
   transition: 0.25s all ease-in-out;
 }
 .edu .info-box:hover, .statistics .stat_box:hover{
@@ -468,7 +476,7 @@ a:hover{
   margin-bottom: 10px;
 }
 .info{
-  margin-top: 10%;
+  margin-top: 2.5%;
 }
 
 
@@ -501,8 +509,25 @@ footer p a:hover{
 
 
 
-
+@media (max-width: 1320px) {
+  .statistics{
+    height: auto;
+    display: grid;
+  }
+  .statistics .stat_box{
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
 @media (max-width: 1160px) {
+  .statistics{
+    height: auto;
+    display: grid;
+  }
+  .statistics .stat_box{
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
   .scroll{
       bottom: 20px;
       font-size: 17px;
@@ -537,7 +562,6 @@ footer p a:hover{
 @media (max-width: 1000px){
   .statistics{
     height: auto;
-    overflow: auto;
     display: grid;
   }
   .statistics .stat_box{
@@ -559,12 +583,8 @@ footer p a:hover{
   .edu{
     height: 250px;
   }
-  .edu .info-box{
-    width:70%;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.40);
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .info{
+    margin-top: 10%;
   }
 }
 @media (max-width: 880px) {
