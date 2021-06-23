@@ -155,21 +155,31 @@ a:hover{
 
 
 /*            PORTFOLIO           */
-* { box-sizing: border-box; }
+/*  * { box-sizing: border-box; }*/
 .carousel {
-  background: #000000;
+  background: #0E0E0E;
 }
 .carousel-cell {
-  width: 30%;
-  height: 400px;
-  margin-right: 10px;
-  background: rgba(0, 0, 0, 1);
-  border-radius: 5px;
+  width: 25%;
+  height: 350px;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 30px;
+  margin-top: 30px;
   counter-increment: carousel-cell;
 }
-.carousel-cell h6{
-  color: #4583AD;
-  font-size: 15px;
+.carousel-cell h5{
+  color: rgb(203, 203, 203);
+  font-size: 17px;
+  margin: 0;
+  font-family: 'Louis George Cafe', serif;
+}
+.box-info{
+  display: flex;
+  align-items: center;
+  width: 35%;
+  float: right;
+  height: 300px;
 }
 /* cell number
 .carousel-cell:before {
