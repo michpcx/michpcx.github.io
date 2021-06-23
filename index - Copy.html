@@ -13,7 +13,7 @@
         <link href="css/mainCSS.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
-        <link href="css/flickity.min.css" rel="stylesheet">
+        <link href="flickity.min" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
         <script src="js/flickity.pkgd.min.js"></script>
@@ -85,118 +85,141 @@
                <h2>My Portfolio</h2>
 
                <div class="carousel"
-                    data-flickity='{ "wrapAround": true, "autoPlay": true }'>
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/lastresort.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Game Jam</h6>
-                            <h5>Last Resort - platformer game based on Chernobyl story.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell">
-                      <div class="item-img">
-                        <img src="assets/portfolio/hotspot.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Software Engineering</h6>
-                            <h5>A mobile app designed to help out to those in need by comparing prices of groceries for different supermarkets.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/cloud_azure.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Cloud</h6>
-                            <h5>Fully functioning IoT system designed to keep track of all the temperatures in the weather stations.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/cloud.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Cloud</h6>
-                            <h5>Created fully working system using the Infrastructure As a Code for the motorway management company in GCP.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell">
-                      <div class="item-img">
-                        <img src="assets/portfolio/backhome.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Game Jam</h6>
-                            <h5>Back Home - a game made in 48 hours where you become a homeless person trying to reach his family.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/uprising1944.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Game Jam</h6>
-                            <h5>Uprising 1944 - 2D game in which you take the role of a Polish soldier during the Warsaw Uprising.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell">
-                      <div class="item-img">
-                        <img src="assets/portfolio/richy.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Software Engineering</h6>
-                            <h5>Richy - personal assistant based fully in the command line using Python</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/hms.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Software Engineering</h6>
-                            <h5>Hotel Management Software - full management system with linked database designed for small to medium Hotel/Hostel chains.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell" >
-                      <div class="item-img">
-                        <img src="assets/portfolio/police.jpg" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Competition</h6>
-                            <h5>HTP3L - A system designed for the Lincolnshire Police to help find missing people with the help of the society.</h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="items carousel-cell">
-                      <div class="item-img">
-                        <img src="assets/portfolio/adidas.JPG" alt="image">
-                        <div class="item-img-overlay">
-                            <h6>Web Project</h6>
-                            <h5>Adidas - University project in which I have developed full-fledged website for Adidas along with the store and customiser functionality.</h5>
-                        </div>
-                      </div>
-                    </div>
+                    data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
                 </div>
+
+               <div class="row">
+
+                 <!-- filter links -->
+                 <div class="filtering">
+                   <span data-filter="*" class="active search_category">All</span>
+                   <span data-filter=".projects" class="search_category">Projects</span>
+                   <span data-filter=".game" class="search_category">Video Games</span>
+                   <span data-filter=".cloud" class="search_category">Cloud</span>
+                 </div>
+
+                 <!-- gallery -->
+                 <div class="gallery">
+
+                   <!-- gallery item -->
+                   <div class="items game" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/lastresort.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Last Resort - platformer game based on Chernobyl story.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/hotspot.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Software Engineering</h6>
+                           <h5>A mobile app designed to help out to those in need by comparing prices of groceries for different supermarkets.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items cloud" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/cloud_azure.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Cloud</h6>
+                           <h5>Fully functioning IoT system designed to keep track of all the temperatures in the weather stations.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items cloud" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/cloud.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Cloud</h6>
+                           <h5>Created fully working system using the Infrastructure As a Code for the motorway management company in GCP.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items game">
+                     <div class="item-img">
+                       <img src="assets/portfolio/backhome.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Back Home - a game made in 48 hours where you become a homeless person trying to reach his family.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+
+                   <!-- gallery item -->
+                   <div class="items game" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/uprising1944.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Game Jam</h6>
+                           <h5>Uprising 1944 - 2D game in which you take the role of a Polish soldier during the Warsaw Uprising.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/richy.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Software Engineering</h6>
+                           <h5>Richy - personal assistant based fully in the command line using Python</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/hms.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Software Engineering</h6>
+                           <h5>Hotel Management Software - full management system with linked database designed for small to medium Hotel/Hostel chains.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+
+                   <!-- gallery item -->
+                   <div class="items projects" >
+                     <div class="item-img">
+                       <img src="assets/portfolio/police.jpg" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Competition</h6>
+                           <h5>HTP3L - A system designed for the Lincolnshire Police to help find missing people with the help of the society.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                   <!-- gallery item -->
+                   <div class="items projects">
+                     <div class="item-img">
+                       <img src="assets/portfolio/adidas.JPG" alt="image">
+                       <div class="item-img-overlay">
+                           <h6>Web Project</h6>
+                           <h5>Adidas - University project in which I have developed full-fledged website for Adidas along with the store and customiser functionality.</h5>
+                       </div>
+                     </div>
+                   </div>
+
+                 </div>
+               </div>
             </div>
 
             <div class="statistics">
