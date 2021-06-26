@@ -12,9 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/mainCSS.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/flickity.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
         <script src="js/countUp.js"></script>
         <script src="js/main.js"></script>
         <script src="js/typed.js"></script>
@@ -85,132 +87,58 @@
             <div class="portfolio">
                <h2>Moje portfolio</h2>
 
-               <div class="row">
+               <div class="carousel"
+                    data-flickity='{ "wrapAround": true, "autoPlay": true }'>
 
-                 <!-- filter links -->
-                 <div class="filtering">
-                   <span data-filter="*" class="active search_category">Wszystko</span>
-                   <span data-filter=".projects" class="search_category">Projekty</span>
-                   <span data-filter=".game" class="search_category">Gry wideo</span>
-                   <span data-filter=".cloud" class="search_category">Chmura</span>
-                 </div>
+                    <div class="items carousel-cell" >
+                        <img src="assets/portfolio/cloud.jpg" alt="image">
+                        <div class="box-info"><h5>W pełni działający system wykorzystujący Infrastrukturę jako Kod dla firmy zarządzającej autostradami w GCP.</h5></div>
+                    </div>
 
-                 <!-- gallery -->
-                 <div class="gallery">
-
-                   <!-- gallery item -->
-                   <div class="items game" >
-                     <div class="item-img">
+                   <div class="items carousel-cell" >
                        <img src="assets/portfolio/lastresort.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Game Jam</h6>
-                           <h5>Last Resort - gra platformowa oparta o historii Chernobyla.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Last Resort - gra platformowa oparta o historii Chernobyla.</h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items projects">
-                     <div class="item-img">
+                   <div class="items carousel-cell">
                        <img src="assets/portfolio/hotspot.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Inżynierstwo oprogramowania</h6>
-                           <h5>Aplikacja mobilna przeznaczona do pomocy potrzebującym poprzez porównywanie cen artykułów spożywczych z różnych supermarketów.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Aplikacja mobilna przeznaczona do pomocy potrzebującym poprzez porównywanie cen artykułów spożywczych z różnych supermarketów.</h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items cloud" >
-                     <div class="item-img">
+                   <div class="items carousel-cell" >
                        <img src="assets/portfolio/cloud_azure.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Chmura</h6>
-                           <h5>W pełni działający system IoT przeznaczony do śledzenia temperatur w stacjach pogodowych. </h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>W pełni działający system IoT przeznaczony do śledzenia temperatur w stacjach pogodowych. </h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items cloud" >
-                     <div class="item-img">
-                       <img src="assets/portfolio/cloud.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Chmura</h6>
-                           <h5>W pełni działający system wykorzystujący Infrastrukturę jako Kod dla firmy zarządzającej autostradami w GCP.</h5>
-                       </div>
-                     </div>
-                   </div>
-
-                   <!-- gallery item -->
-                   <div class="items game">
-                     <div class="item-img">
+                   <div class="items carousel-cell">
                        <img src="assets/portfolio/backhome.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Game Jam</h6>
-                           <h5>Back Home - Gra zrobiona w 48 godzin, w której stajesz się człowiekiem bezdomnym próbującym dotrzeć do swojej rodziny.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Back Home - Gra zrobiona w 48 godzin, w której stajesz się człowiekiem bezdomnym próbującym dotrzeć do swojej rodziny.</h5></div>
                    </div>
 
-
-                   <!-- gallery item -->
-                   <div class="items game" >
-                     <div class="item-img">
+                   <div class="items carousel-cell" >
                        <img src="assets/portfolio/uprising1944.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Game Jam</h6>
-                           <h5>Uprising 1944 - Gra 2D, w której wcielasz się w rolę polskiego żołnierza podczas Powstania Warszawskiego.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Uprising 1944 - Gra 2D, w której wcielasz się w rolę polskiego żołnierza podczas Powstania Warszawskiego.</h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items projects">
-                     <div class="item-img">
+                   <div class="items carousel-cell">
                        <img src="assets/portfolio/richy.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Inżynierstwo oprogramowania</h6>
-                           <h5>Richy - Osobisty asystent w pełni wykorzystujący Python-a w linii poleceń.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Richy - Osobisty asystent w pełni wykorzystujący Python-a w linii poleceń.</h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items projects" >
-                     <div class="item-img">
+                   <div class="items carousel-cell" >
                        <img src="assets/portfolio/hms.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Inżynierstwo oprogramowania</h6>
-                           <h5>Oprogramowanie do zarządzania hotelami - pełny system zarządzania razem z bazą danych przeznaczony dla małych i średnich sieci Hoteli i Hosteli.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Oprogramowanie do zarządzania hotelami - pełny system zarządzania razem z bazą danych przeznaczony dla małych i średnich sieci Hoteli i Hosteli.</h5></div>
                    </div>
 
-
-                   <!-- gallery item -->
-                   <div class="items projects" >
-                     <div class="item-img">
+                   <div class="items carousel-cell" >
                        <img src="assets/portfolio/police.jpg" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Competition</h6>
-                           <h5>HTP3L - System zaprojektowany dla Policji Lincolnshire w celu pomocy w odnalezieniu zaginionych osób z pomocą społeczeństwa.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>HTP3L - System zaprojektowany dla Policji Lincolnshire w celu pomocy w odnalezieniu zaginionych osób z pomocą społeczeństwa.</h5></div>
                    </div>
 
-                   <!-- gallery item -->
-                   <div class="items projects">
-                     <div class="item-img">
+                   <div class="items carousel-cell">
                        <img src="assets/portfolio/adidas.JPG" alt="image">
-                       <div class="item-img-overlay">
-                           <h6>Web Project</h6>
-                           <h5>Adidas - Projekt uniwersytecki, w którym stworzyłem pełnowartościową stronę internetową dla Adidasa wraz z funkcjonalnością sklepu i customizera.</h5>
-                       </div>
-                     </div>
+                       <div class="box-info"><h5>Adidas - Projekt uniwersytecki, w którym stworzyłem pełnowartościową stronę internetową dla Adidasa wraz z funkcjonalnością sklepu i customizera.</h5></div>
                    </div>
-
-                 </div>
                </div>
             </div>
 
