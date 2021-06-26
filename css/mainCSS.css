@@ -185,15 +185,6 @@ a:hover{
   float: right;
   height: 300px;
 }
-/* cell number
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}*/
 .portfolio{
   width: 100%;
   background-color: #0E0E0E;
@@ -445,6 +436,12 @@ footer p a:hover{
     margin-top: 30px;
     margin-bottom: 15px;
   }
+  .carousel-cell {
+    width: 75%;
+  }
+  .carousel-cell img{
+    width: 30%;
+  }
 }
 @media (max-width: 1160px) {
   .statistics{
@@ -541,5 +538,26 @@ footer p a:hover{
   .svg-wrapper-button{
     float: left;
     margin-bottom: 15px;
+  }
+  .carousel-cell {
+    width: 75%;
+    height: 350px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .carousel-cell img{
+    width: 40%;
+  }
+  .box-info{
+    display: block;
+    align-items: center;
+    width: 50%;
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
   }
 }
