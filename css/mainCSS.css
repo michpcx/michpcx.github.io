@@ -79,6 +79,7 @@ a:hover{
 }
 .name{
   color: #4583AD;
+  font-family: 'Hansief Rough', serif;
 }
 .main_icon{
   width: 40px;
@@ -155,7 +156,6 @@ a:hover{
 
 
 /*            PORTFOLIO           */
-/*  * { box-sizing: border-box; }*/
 .carousel {
   background: #0E0E0E;
 }
@@ -177,6 +177,7 @@ a:hover{
 .carousel-cell img{
   border-radius: 50%;
   width: 55%;
+  border: 3px solid #feffde;
 }
 .box-info{
   display: flex;
@@ -194,7 +195,7 @@ a:hover{
 }
 .portfolio h2{
   font-size: 30pt;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Hansief Rough', sans-serif;
   color: #D6D4D4;
   padding-top: 60px;
   position: relative;
@@ -258,7 +259,7 @@ a:hover{
 }
 .certs h2{
   font-size: 30pt;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Hansief Rough', sans-serif;
   color: #D6D4D4;
   padding-top: 60px;
   position: relative;

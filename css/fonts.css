@@ -78,3 +78,7 @@
   font-family: 'SinkinSans';
   src: url(../assets/SinkinSans.ttf);
 }
+@font-face {
+  font-family: 'Hansief Rough';
+  src: url(../assets/HansiefRough.otf);
+}
