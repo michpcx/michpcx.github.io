@@ -164,7 +164,7 @@ a:hover{
   height: 350px;
   margin-right: 5%;
   margin-left: 5%;
-  padding-top: 30px;
+  padding-bottom: 35px;
   margin-top: 30px;
   counter-increment: carousel-cell;
 }
@@ -226,7 +226,7 @@ a:hover{
 }
 .statistics .stat_box{
   text-align:center;
-  /*border: 1px solid white;*/
+  border: 3px solid white;
   width:300px;
   height:200px;
   display:inline-block;
@@ -235,14 +235,14 @@ a:hover{
   margin-top: 70px;
 }
 .statistics h4{
-  margin-top: 25px;
+  margin-top: 15px;
   color: white;
   font-family: 'Louis George Cafe', sans-serif;
   font-size: 18px;
 }
 .number{
   color: white;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Hansief Rough', sans-serif;
   font-size: 80px;
   padding-top: 20px;
 }
