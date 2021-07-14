@@ -28,7 +28,7 @@ $( document ).ready(function() {
     };
 
     var interst_list_strings = {
-      strings: ['programming.', 'cyber&nbsp;security.', 'skydiving.', 'travelling.', 'politics.', 'history.'],
+      strings: ['programming.', 'cyber&nbsp;security.', 'skydiving.', 'travelling.', 'history.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
@@ -37,7 +37,7 @@ $( document ).ready(function() {
     };
 
     var interst_list_strings_pl = {
-      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'spadochroniarstwu.', 'podróżowaniu.', 'polityce.', 'historii.'],
+      strings: ['programowaniu.', 'bezpieczeństwie&nbsp;cybernetycznym.', 'spadochroniarstwu.', 'podróżowaniu.', 'historii.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
@@ -46,7 +46,7 @@ $( document ).ready(function() {
     };
 
     var interst_list_strings_de = {
-      strings: ['programmierung.', 'cybersicherheit.', 'fallschirmspringen.', 'reisen.', 'politik.', 'geschichte.'],
+      strings: ['programmierung.', 'cybersicherheit.', 'fallschirmspringen.', 'reisen.', 'geschichte.'],
       typeSpeed: 100,
       backDelay: 1500,
       loop: true,
